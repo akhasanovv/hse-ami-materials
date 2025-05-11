@@ -279,3 +279,10 @@ $$
     Возьмем $(\mathbb{R}, +)$ и $(\mathbb{R}_{>0}, \times)$. Построим изоморфизм $\varphi$, такой что 
     $\varphi(x) = e^x$. Тогда $\varphi(x+y)=e^{x+y} = e^x e^y$.
 
+## Семинар 2
+
+[Ссылка](./static/algebra_sem2.pdf) на семинар в $\LaTeX$-формате.
+
+## ДЗ 2
+
+[Ссылка](./static/algebra_hw2.pdf) на решенное ДЗ-2 в $\LaTeX$-формате.
