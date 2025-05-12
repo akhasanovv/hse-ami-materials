@@ -33,6 +33,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - attr_list
+  - admonition
 
 extra_javascript:
   - javascripts/katex.js
