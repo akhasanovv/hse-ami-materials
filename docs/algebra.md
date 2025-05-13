@@ -148,7 +148,7 @@ $g^n = g^{mq + r} = (g^m)^q \cdot g^r = 1^q \cdot g^r = g^r$.
 Пусть $G$ $-$ группа, $H \subseteq G$ $-$ подгруппа, $g \ (g \in G)$ $-$ какой-то элемент. 
 Тогда левый смежный класс элемента $g$ по подгруппе $H$ это $gH = \{gh \mid h \in H\}$.
 
-**Лемма.** Для любых $g_1, g_2 \in G $ верно $g_1H = g_2H$ или $g_1H \cap g_2H = \emptyset$.
+**Лемма.** Для любых $g_1, g_2 \in G $ верно $g_1H = g_2H$ или $g_1H \cap g_2H = \set$.
 
 ***Доказательство.***
 В случае пустого пересечения все очевидно.
@@ -674,16 +674,16 @@ $$
     Матрица $C$ размером $(n, m)$ диагональна, если она имеет вид
     $$
     C = \begin{pmatrix}
-        * & \empty & \empty & \empty & \empty \\\ 
-        \empty & * \empty & \empty & \empty \\\ 
-        \empty & \empty & * & \empty & \empty 
+        * & \ & \ & \ & \ \\\ 
+        \ & * \ & \ & \ \\\ 
+        \ & \ & * & \ & \
     \end{pmatrix}
     $$
-    то есть если $i \ne j$, то $c_{ij} = 0$. Обозначается как $\diag(u_1, \dots, u_p)$, где $p = \min(n, m)$.
+    то есть если $i \ne j$, то $c_{ij} = 0$. Обозначается как $\text{diag}(u_1, \dots, u_p)$, где $p = \min(n, m)$.
 
 **Предложение.**
     Любую прямоугольную целочисленную матрицу $C$ элементарными преобразованиями строк и столбцов можно привести 
-    к диагональному виду $\diag(u_1, \dots, u_p)$, где $u_1 \ge 0, \dots, u_p \ge 0, \forall i : u_i \mid u_{i+1}$.
+    к диагональному виду $\text{diag}(u_1, \dots, u_p)$, где $u_1 \ge 0, \dots, u_p \ge 0, \forall i : u_i \mid u_{i+1}$.
 
 ***Доказательство (предложения).***
     Без ограничения общности считаем, что $c_{11}>0$. 
@@ -701,8 +701,8 @@ $$
 После этого мы получим матрицу вида:
     $$
     C = \begin{pmatrix}
-        c_{11} & \empty \\
-        \empty & c_{11} \cdot C'
+        c_{11} & \ \\\
+        \ & c_{11} \cdot C'
     \end{pmatrix}
     $$
 
@@ -710,9 +710,9 @@ $$
 
 $$
     C = \begin{pmatrix}
-        c_{11} & \empty & \empty \\
-        \empty & c_{22} & \empty \\\ 
-        \empty & \empty & c_{22} \cdot C''
+        c_{11} & \ & \ \\
+        \ & c_{22} & \ \\\ 
+        \ & \ & c_{22} \cdot C''
     \end{pmatrix}
     $$
 
@@ -736,7 +736,7 @@ $$
 Цепочкой преобразований строк и столбцов приведем $C$ к диагональному виду. Получим
 
 $$
-(f_1', \dots, f_m') = (e_1', \dots, e_n') \cdot \diag(u_1, \dots, u_m)
+(f_1', \dots, f_m') = (e_1', \dots, e_n') \cdot \text{diag}(u_1, \dots, u_m)
 $$
 
 Из этого следует, что 
@@ -758,15 +758,10 @@ $$
     $L / N \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m} \oplus \underbrace{\mathbb{Z} \oplus \dots \oplus \mathbb{Z}}_{n-m \text{ раз }}$ 
 
 ***Доказательство.***
-    Выберем согласованные базисы $e_1, \dots, e_m, e_{m+1}, \dots, e_n$ и $u_1e_1, \dots, u_m e_m$. 
+Выберем согласованные базисы $e_1, \dots, e_m, e_{m+1}, \dots, e_n$ и $u_1e_1, \dots, u_m e_m$. 
     Тогда 
-    $$
-        L / N = \frac{\mathbb{Z} \oplus \dots \oplus \mathbb{Z} \oplus \mathbb{Z} \dots \oplus \mathbb{Z}}{u_1\mathbb{Z} \oplus \dots \oplus u_m\mathbb{Z} 
-        \oplus \{0\} \oplus \dots \oplus \{0\}} \cong \\
-        \mathbb{Z} / u_1\mathbb{Z} \oplus \dots \oplus \mathbb{Z} / u_m\mathbb{Z} \oplus \dots \oplus \mathbb{Z}/\{0\} \oplus \dots \oplus \mathbb{Z}/\{0\}
-        \cong \\
-        \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
-    $$
+
+$$L / N = \frac{\mathbb{Z} \oplus \dots \oplus \mathbb{Z} \oplus \mathbb{Z} \dots \oplus \mathbb{Z}}{u_1\mathbb{Z} \oplus \dots \oplus u_m\mathbb{Z} \oplus \{0\} \oplus \dots \oplus \{0\}} \cong \mathbb{Z} / u_1\mathbb{Z} \oplus \dots \oplus \mathbb{Z} / u_m\mathbb{Z} \oplus \dots \oplus \mathbb{Z}/\{0\} \oplus \dots \oplus \mathbb{Z}/\{0\} \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}$$
 
 **Определение.**
     Числа $u_1, \dots, u_m$ называют инвариантными множителями для пары $(L, N)$. 
@@ -779,10 +774,12 @@ $$
 **Теорема.**
     Всякая конечно порожденная абелева группа $A$ разлагается в прямую сумму 
     примарных и бесконечных циклических групп. Формально
-    $$
-    A \cong \mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_s^{k_s}} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
-    $$
-    где $p_1, \dots, p_s$ $-$ простые (не обязательно различные), а $k_i \in \mathbb{N}$. 
+
+$$
+A \cong \mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_s^{k_s}} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
+$$
+    
+где $p_1, \dots, p_s$ $-$ простые (не обязательно различные), а $k_i \in \mathbb{N}$. 
     Кроме того, число бесконечных слагаемых и число и порядки примарных слагаемых определены однозначно.
 
 **Пример.**
@@ -796,15 +793,19 @@ $$
     Тогда рассмотрим гомоморфизм $\varphi : \mathbb{Z}^n \to A$, причем $(s_1, \dots, s_n) \mapsto^{\varphi} (s_1a_1, \dots, s_na_n)$. 
     Заметим, что $\varphi$ $-$ сюръективен, потому что любой элемент $A$ представим в виде линейной комбинации. 
     Вспомним, что 
-    $$
-    A = \text{Im} \varphi \cong \mathbb{Z}^n / \ker \varphi = L / N \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_n} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
-    $$
-    Каждое $u_i$ разложим на простые множители, $u_i = p_{1i}^{k_{1i}} \cdot \dots \cdot p_{si}^{k_{si}}$. 
-    Тогда 
-    $$
-    \mathbb{Z}_{u_i} \cong \mathbb{Z}_{p_{1i}^{k_{1i}}} \oplus \dots \oplus \mathbb{Z}_{p_{si}^{k_{si}}}
-    $$
-    Таким образом доказали существование. Единственность доказывается технически и является факультативным материалом.
+    
+$$
+A = \text{Im} \varphi \cong \mathbb{Z}^n / \ker \varphi = L / N \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_n} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
+$$
+
+Каждое $u_i$ разложим на простые множители, $u_i = p_{1i}^{k_{1i}} \cdot \dots \cdot p_{si}^{k_{si}}$. 
+Тогда 
+
+$$
+\mathbb{Z}_{u_i} \cong \mathbb{Z}_{p_{1i}^{k_{1i}}} \oplus \dots \oplus \mathbb{Z}_{p_{si}^{k_{si}}}
+$$
+
+Таким образом доказали существование. Единственность доказывается технически и является факультативным материалом.
 
 **Следствие.**
     Каждая конечная абелева группа изоморфна $\mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_s^{k_s}} \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m}$, 
@@ -829,7 +830,7 @@ $$
 
 ***Доказательство.***
     $A$ $-$ циклическая $\Leftrightarrow$ в разложении $\mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m}$ только одно слагаемое, пусть $\mathbb{Z}_k$. 
-    По предложению (7) получаем, что $\text{exp}(A) = k$.
+    По предложению получаем, что $\text{exp}(A) = k$.
 
 
 ## **ДЗ 3**
@@ -840,7 +841,7 @@ $$
 Приведите пример счётной не конечно порождённой абелевой группы.
 
 **Задача 2.**
-Пусть $A$ --- свободная абелева группа с базисом $e_1, e_2, e_3$, а $B$ --- 
+Пусть $A$ $-$ свободная абелева группа с базисом $e_1, e_2, e_3$, а $B$ $-$ 
     её подгруппа, порождённая элементами $f_1, f_2, f_3$, где
 
 $$
@@ -851,7 +852,7 @@ $$
 Используя теорему о согласованных базисах, вычислите факторгруппу $A/B$.
 
 **Задача 3.**
-Пусть $A$ --- свободная абелева группа с базисом $e_1, \dots, e_n$, $B$ --- её подгруппа с порождающими элементами
+Пусть $A$ $-$ свободная абелева группа с базисом $e_1, \dots, e_n$, $B$ $-$ её подгруппа с порождающими элементами
 
 $$
     f_j = \sum \limits_{i=1}^n a_{ij} e_i, \quad j = 1, \dots, n, \quad a_{ij} \in \mathbb{Z}
@@ -862,8 +863,8 @@ $$
 **Задача 4.**
 Подгруппа $B$ в свободной абелевой группе $A$ с базисом $e_1, e_2$ порождена
 элементами $e_1$ и $6e_2$. Приведите пример такой подгруппы $C$ в $B$, для которой не
-существует тройки базисов $a, b, c$ в $A, B, C$ соответственно, что одновременно $a$ и $b$ ---
-пара согласованных базисов в $A$ и $B$, $b$ и $c$ --- пара согласованных базисов в $B$ и $C$.
+существует тройки базисов $a, b, c$ в $A, B, C$ соответственно, что одновременно $a$ и $b$ $-$
+пара согласованных базисов в $A$ и $B$, $b$ и $c$ $-$ пара согласованных базисов в $B$ и $C$.
 
 **Задача 5.**
 Докажите, что всякая дискретная подгруппа $L$ в $(\mathbb{R}^n, +)$ 
