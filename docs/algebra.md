@@ -998,7 +998,7 @@ $$
 
 **Определение.**
     Действия $G \times X \to X$ и $G \times Y \to Y$ называются изоморфными, если существует биекция $\varphi : X \to Y$, такая что 
-    $$\forall x \in X, g \in G : \varphi (gx) = g \varphi(x)$$
+    $\forall x \in X, g \in G : \varphi (gx) = g \varphi(x)$.
 
 **Предложение.**
     Любое свободное транзитивное действие $G \times X \to X$ изоморфно действию $G \times G \to G$ левыми сдвигами. 
