@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # **algorithms**
 
 ## **Лекция 1**
