@@ -1,0 +1,2362 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://akhasanovv.github.io/hse-ami-materials/algebra/">
+      
+      
+        <link rel="prev" href="../algorithms/">
+      
+      
+        <link rel="next" href="..">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>algebra - hse ami</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#algebra" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="hse ami" class="md-header__button md-logo" aria-label="hse ami" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            hse ami
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              algebra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="hse ami" class="md-nav__button md-logo" aria-label="hse ami" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    hse ami
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    algorithms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    algebra
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    algebra
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Обозначения.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры групп.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Семинар 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Циклические группы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как представлять фактор-группу?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Семинар 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-gh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как представлять себе фактор-группу \(G/H\)?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Еще раз про фактор-группы.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Абелевы группы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Классификация базисов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Доказательство теоремы о согласованных базисах
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Действия групп
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как починить действия?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-x-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      Три действия произвольной группы \(G\) на себе \((X = G)\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Кольца и поля
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры колец
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры алгебр
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как строить идеалы?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Бывают ли неглавные идеалы?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Факторкольцо
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 8
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ-5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 9
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ-6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 12
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ-7
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 13
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    about
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Обозначения.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры групп.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Семинар 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Циклические группы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как представлять фактор-группу?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Семинар 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-gh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как представлять себе фактор-группу \(G/H\)?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Еще раз про фактор-группы.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Абелевы группы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Классификация базисов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Доказательство теоремы о согласованных базисах
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Действия групп
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как починить действия?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-x-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      Три действия произвольной группы \(G\) на себе \((X = G)\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ 4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Лекция 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Кольца и поля
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры колец
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры алгебр
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как строить идеалы?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Бывают ли неглавные идеалы?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Факторкольцо
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 8
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ-5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 9
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ-6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 12
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ДЗ-7
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лекция 13
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="algebra"><strong>algebra</strong></h1>
+<div class="admonition note">
+<p class="admonition-title">Дисклеймер</p>
+<p>Домашние задания выкладываются без решений. Это сделано с целью 
+академической честности. 
+Если вы не студент Вышки, но вам интересно как решать какую-то из упомянутых задач 
+(или просто есть какие-то вопросы), пишите мне в телеграм <a href="https://t.me/akhasanovv">@akhasanovv</a>. </p>
+</div>
+<h2 id="1"><strong>Лекция 1</strong></h2>
+<p><a href="../static/algebra_lec1.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<p><strong>Определение.</strong> 
+Множество с бинарной операцией <span class="arithmatex">\(\circ\)</span> <span class="arithmatex">\(-\)</span> множество <span class="arithmatex">\(M\)</span> с заданным отображением <span class="arithmatex">\(M \times M \to M\)</span>, 
+такое что <span class="arithmatex">\((a, b) \to a \circ b\)</span>.</p>
+<p><strong>Определение.</strong> 
+<span class="arithmatex">\((M, \circ)\)</span> называется полугруппой, если операция ассоциативна, то есть <span class="arithmatex">\((a \circ b) \circ c=a \circ (b \circ c)\)</span>. Полугруппа обозначается как <span class="arithmatex">\((S, \circ)\)</span>.</p>
+<p><strong>Определение.</strong> 
+Полугруппа <span class="arithmatex">\((S, \circ)\)</span> называется моноидом, если в ней существует нейтральный элемент <span class="arithmatex">\(e \ (e \in S)\)</span>, то есть 
+такой, что <span class="arithmatex">\(\forall s \in S : e \circ s = s \circ e = s\)</span>.</p>
+<p><strong>Примеры.</strong> 
+<span class="arithmatex">\((\mathbb{N}, +)\)</span> <span class="arithmatex">\(-\)</span> не моноид, <span class="arithmatex">\((\mathbb{Z}_{\ge 0}, +)\)</span> <span class="arithmatex">\(-\)</span> моноид.</p>
+<p><strong>Лемма.</strong> Нейтральный элемент единствен.</p>
+<p><strong><em>Доказательство.</em></strong> Пусть их хотя бы 2. Обозначим их за <span class="arithmatex">\(e_1\)</span> и <span class="arithmatex">\(e_2\)</span> соответственно. Тогда:
+$$
+e_1 \circ e_2 = e_1 = e_2
+$$</p>
+<p><strong>Определение.</strong> Моноид <span class="arithmatex">\((S, \circ)\)</span> называется группой, если все его элементы обратимы, то есть 
+    <span class="arithmatex">\(\forall a \in S \ \exists b \in S : a \circ b = b \circ a = e\)</span>. 
+    Тогда говорят, что <span class="arithmatex">\(b\)</span> обратен <span class="arithmatex">\(a\)</span>. Обозначается как <span class="arithmatex">\(b=a^{-1}\)</span>.</p>
+<p><strong>Лемма.</strong> Обратный элемент, если он существует, единственен.</p>
+<p><strong><em>Доказательство.</em></strong> Пусть обратных хотя бы 2 для элемента <span class="arithmatex">\(x\)</span>. Обозначим их за <span class="arithmatex">\(y_1\)</span> и <span class="arithmatex">\(y_2\)</span> соответственно. Но тогда:
+$$
+y_1 = y_1 \circ e = y_1 \circ (x \circ y_2) = (y_1 \circ x) \circ y_2 = e \circ y_2 = y_2
+$$</p>
+<p><strong>Определение.</strong>
+Группа <span class="arithmatex">\((G, \circ)\)</span> называется коммутативной (или абелевой), если 
+    <span class="arithmatex">\(\forall a, b \in G : a \circ b = b \circ a\)</span>.</p>
+<h3 id="_1">Обозначения.</h3>
+<ul>
+<li>Произвольные группы (мультипликативные) обозначаем как <span class="arithmatex">\((G, \circ)\)</span>.</li>
+<li>Коммутативные группы обозначаем как <span class="arithmatex">\((A, +)\)</span>.</li>
+</ul>
+<p><strong>Определение.</strong> Порядок группы <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> число элементов в ней. Обозначается как <span class="arithmatex">\(|G|\)</span>.</p>
+<h3 id="_2">Примеры групп.</h3>
+<ul>
+<li>Числовые аддитивные: <span class="arithmatex">\((\mathbb{Z}, +), (\mathbb{Q}, +), (\mathbb{R}, +), (\mathbb{C}, +), (\mathbb{Z}_n, +)\)</span>.</li>
+<li>Числовые мультипликативные: <span class="arithmatex">\((\mathbb{Q} \setminus \{0\}, \times), (\mathbb{R} \setminus \{0\}, \times), (\mathbb{C} \setminus \{0\}, \times), (\mathbb{Z}_p \setminus \{0\}, \times), (\mathbb{Z}_n^*, \times)\)</span>.</li>
+<li>
+<p>Группы матриц (по умножению):</p>
+<ul>
+<li><span class="arithmatex">\(GL_n(\mathbb{R}) = \{A \in M_n(\mathbb{R}) \mid \det A \ne 0\}\)</span> </li>
+<li><span class="arithmatex">\(SL_n(\mathbb{R}) = \{A \in M_n(\mathbb{R}) \mid \det A = 1\}\)</span> </li>
+</ul>
+</li>
+<li>
+<p>Группы подстановок <span class="arithmatex">\(S_n\)</span>. Также есть группа четных перестановок <span class="arithmatex">\(A_n\)</span>. Можно заметить, что <span class="arithmatex">\(|A_n| = \frac{n!}{2}\)</span>. <span class="arithmatex">\(A_n\)</span> также называют знакопеременной. </p>
+</li>
+</ul>
+<p><strong>Упражнение.</strong> Покажите, что <span class="arithmatex">\(S_n\)</span> <span class="arithmatex">\(-\)</span> коммутативна <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(n \le 2\)</span>.</p>
+<p><strong>Упражнение.</strong> Покажите, что <span class="arithmatex">\(A_n\)</span> <span class="arithmatex">\(-\)</span> коммутативна <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(n \le 3\)</span>.</p>
+<p><strong>Определение.</strong> Подмножество <span class="arithmatex">\(H \subseteq G\)</span>, где <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа, называется подгруппой, если 
+    <span class="arithmatex">\(H \ne \varnothing\)</span> и <span class="arithmatex">\(\forall a, b \in H : ab^{-1} \in H\)</span>. 
+Нетрудно видеть, что это определение эквивалентно:</p>
+<ul>
+<li><span class="arithmatex">\(e \in H\)</span></li>
+<li><span class="arithmatex">\(\forall a, b \in H: ab \in H\)</span></li>
+<li><span class="arithmatex">\(\forall a \in H : a^{-1} \in H\)</span></li>
+</ul>
+<p>В любой группе есть 2 несобственные подгруппы: <span class="arithmatex">\(H_1 = \{e\}, H_2 = G\)</span>.</p>
+<p><strong>Предложение.</strong> Всякая подгруппа в <span class="arithmatex">\((\mathbb{Z}, +)\)</span> имеет вид <span class="arithmatex">\(k \mathbb{Z}\)</span>, где <span class="arithmatex">\(k \in \mathbb{Z}_{+}\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong> Ясно, что <span class="arithmatex">\(k\mathbb{Z}\)</span> <span class="arithmatex">\(-\)</span> подгруппа. 
+    Пусть <span class="arithmatex">\(H\)</span> <span class="arithmatex">\(-\)</span> подгруппа. Если <span class="arithmatex">\(H = \{0\}\)</span>, то <span class="arithmatex">\(k=0\)</span>. 
+    Иначе пусть <span class="arithmatex">\(k\)</span> <span class="arithmatex">\(-\)</span> наименьшее натуральное число в <span class="arithmatex">\(H\)</span>. Тогда <span class="arithmatex">\(k \mathbb{Z} \subseteq H\)</span>. 
+    Теперь в обратную сторону, возьмем <span class="arithmatex">\(a \in H\)</span>. Представим <span class="arithmatex">\(a = kq + r\)</span>, где <span class="arithmatex">\(q \in \mathbb{Z}, 0 \le r \le k-1\)</span>. 
+    Тогда <span class="arithmatex">\(r=a - kq \in H\)</span>, но так как <span class="arithmatex">\(k\)</span> <span class="arithmatex">\(-\)</span> минимальное натуральное, <span class="arithmatex">\(r=0\)</span>. </p>
+<p><strong>Определение.</strong> Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа и <span class="arithmatex">\(g \in G\)</span>. Тогда циклическая подгруппа в <span class="arithmatex">\(G\)</span>, порожденная элементом <span class="arithmatex">\(g\)</span>, это 
+    подгруппа <span class="arithmatex">\(H = \langle g \rangle = \{g^m \mid m \in \mathbb{Z}\}\)</span>. 
+    Элемент <span class="arithmatex">\(g\)</span> называется порождающим (или образующим).</p>
+<p><strong>Пример.</strong> <span class="arithmatex">\(2\mathbb{Z} \subseteq \mathbb{Z}\)</span>, причем <span class="arithmatex">\(2\mathbb{Z} = \langle 2 \rangle = \langle -2 \rangle\)</span>.</p>
+<p><strong>Определение.</strong> Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа и <span class="arithmatex">\(g \in G\)</span>. Тогда порядком элемента <span class="arithmatex">\(g\)</span> называется наименьшее натуральное <span class="arithmatex">\(s\)</span>, 
+    такое что <span class="arithmatex">\(g^s = e\)</span>. Если такого <span class="arithmatex">\(s\)</span> не существует, то порядок равен <span class="arithmatex">\(\infty\)</span>. 
+    Обозначается как <span class="arithmatex">\(ord(g)\)</span>.</p>
+<p><strong>Предложение.</strong> Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа и <span class="arithmatex">\(g \in G\)</span>. Тогда <span class="arithmatex">\(ord(g) = |\langle g \rangle|\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong> Заметим, что <span class="arithmatex">\(g^k = g^s\)</span> тогда и только тогда, когда <span class="arithmatex">\(g^{k-s} = e\)</span>.
+Поэтому если <span class="arithmatex">\(ord(g) = \infty\)</span>, то все <span class="arithmatex">\(g^m \ (m \in \mathbb{Z})\)</span> попарно различны. 
+Следовательно <span class="arithmatex">\(ord(g) = |\langle g \rangle| = \infty\)</span>.</p>
+<p>Теперь рассмотрим случай, когда <span class="arithmatex">\(ord(g) = m\)</span>. 
+Тогда элементы <span class="arithmatex">\(g^0, g^1, \dots, g^{m-1}\)</span> попарно различны. С другой стороны, 
+<span class="arithmatex">\(g^n = g^{mq + r} = (g^m)^q \cdot g^r = 1^q \cdot g^r = g^r\)</span>. 
+Поэтому <span class="arithmatex">\(|\langle g \rangle| = |\{g^0, g^1, \dots, g^{m-1}\}| = m = ord(g)\)</span>, что и требовалось.</p>
+<p><strong>Определение.</strong> Группа <span class="arithmatex">\(G\)</span> называется циклической, если существует такой <span class="arithmatex">\(g \in G\)</span>, что <span class="arithmatex">\(G = \langle g \rangle\)</span>.</p>
+<h2 id="1_1"><strong>Семинар 1</strong></h2>
+<p><a href="../static/algebra_sem1.pdf">Ссылка</a> на семинар в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="1_2"><strong>ДЗ 1</strong></h2>
+<p>Задачи, предлагавшиеся в ДЗ-1. </p>
+<p><strong>Задача 1.</strong>
+Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа, <span class="arithmatex">\(g \in G, ord(g) = m\)</span> и <span class="arithmatex">\(k \in \mathbb{Z}\)</span>. 
+Найдите порядок элемента <span class="arithmatex">\(g^k\)</span>.</p>
+<p><strong>Задача 2.</strong>
+Найдите все подгруппы в группе <span class="arithmatex">\(D_4\)</span>.</p>
+<p><strong>Задача 3.</strong>
+Существует ли в группе <span class="arithmatex">\(GL_4(\mathbb{Q})\)</span> матрица порядка 4, все элементы которой <span class="arithmatex">\(-\)</span> ненулевые числа?</p>
+<p><strong>Задача 4.</strong>
+Пусть <span class="arithmatex">\(G = S_n\)</span> и <span class="arithmatex">\(H\)</span> <span class="arithmatex">\(-\)</span> подгруппа всех подстановок, которые оставляют элемент <span class="arithmatex">\(n\)</span> на месте. 
+Опишите левые и правые смежные классы <span class="arithmatex">\(G\)</span> по <span class="arithmatex">\(H\)</span>.</p>
+<p><strong>Задача 5.</strong>
+Докажите, что порядок конечной группы <span class="arithmatex">\(G\)</span> нечетен тогда и только тогда, 
+    когда из любого ее элемента можно извлечь корень (то есть для любого <span class="arithmatex">\(x \in G\)</span> 
+    найдется <span class="arithmatex">\(y \in G\)</span>, для которого <span class="arithmatex">\(x=y^2\)</span>).</p>
+<h2 id="2"><strong>Лекция 2</strong></h2>
+<p><a href="../static/algebra_lec2.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h3 id="_3">Циклические группы</h3>
+<p>Чуть позже докажем, что все циклические группы изоморфны <span class="arithmatex">\((\mathbb{Z}, +), (\mathbb{Z}_n, +)\)</span>.</p>
+<p><strong>Определение.</strong> 
+Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа, <span class="arithmatex">\(H \subseteq G\)</span> <span class="arithmatex">\(-\)</span> подгруппа, <span class="arithmatex">\(g \ (g \in G)\)</span> <span class="arithmatex">\(-\)</span> какой-то элемент. 
+Тогда левый смежный класс элемента <span class="arithmatex">\(g\)</span> по подгруппе <span class="arithmatex">\(H\)</span> это <span class="arithmatex">\(gH = \{gh \mid h \in H\}\)</span>.</p>
+<p><strong>Лемма.</strong> Для любых $g_1, g_2 \in G $ верно <span class="arithmatex">\(g_1H = g_2H\)</span> или <span class="arithmatex">\(g_1H \cap g_2H = \varnothing\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+В случае пустого пересечения все очевидно.
+Пусть <span class="arithmatex">\(g_1h_1 = g_2h_2\)</span>, где <span class="arithmatex">\(h_1, h_2 \in H\)</span>. 
+Тогда <span class="arithmatex">\(g_1 = g_2h_2h_1^{-1}\)</span>, следовательно <span class="arithmatex">\(g_1H =  g_2h_2h_1^{-1}H_1 \subseteq g_2H\)</span>.
+Аналогично <span class="arithmatex">\(g_2H \subseteq g_1H\)</span>, поэтому <span class="arithmatex">\(g_1H = g_2H\)</span>.</p>
+<p><strong>Лемма.</strong> <span class="arithmatex">\(|gH| = |H|\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Установим биекцию между <span class="arithmatex">\(gH\)</span> и <span class="arithmatex">\(H\)</span>. 
+    Пусть <span class="arithmatex">\(\phi : gH \to H\)</span>, где <span class="arithmatex">\(\phi(gh) = h\)</span>. 
+    Поймем, что <span class="arithmatex">\(\phi\)</span> <span class="arithmatex">\(-\)</span> биекция. Пусть не так, <span class="arithmatex">\(gh_1 = gh_2 \Rightarrow^{g^{-1} \cdot} h_1 = h_2\)</span>, противоречие.</p>
+<p><strong>Определение.</strong> 
+    Индекс подгруппы <span class="arithmatex">\(H \subseteq G\)</span> <span class="arithmatex">\(-\)</span> это число различных левых смежных классов <span class="arithmatex">\(G\)</span> по <span class="arithmatex">\(H\)</span>. 
+    Обозначается как <span class="arithmatex">\([G:H]\)</span>.</p>
+<p><strong>Теорема Лагранжа.</strong>
+    Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> конечная группа. Тогда для любой подгруппы <span class="arithmatex">\(H \subseteq G\)</span>: 
+    $$
+    |G| = |H| \cdot [G:H]
+    $$</p>
+<p><strong><em>Доказательство.</em></strong>
+    Если <span class="arithmatex">\(H=G\)</span>, то теорема верна. 
+    Возьмем в качестве первого класса <span class="arithmatex">\(H\)</span>.
+    Потом возьмем <span class="arithmatex">\(g_1 \in G : g_1H \ne H\)</span> и создадим второй класс <span class="arithmatex">\(g_1H\)</span>. 
+    Затем возьмем еще один элемент <span class="arithmatex">\(g_2 \in G : g_2H \ne H \land g_2H \ne g_1H\)</span> и создадим еще один класс. 
+    И так далее. Размер каждого класса будет <span class="arithmatex">\(|H|\)</span>. Всего классов, понятно, <span class="arithmatex">\([G:H]\)</span>.</p>
+<p><strong>Следствие.</strong>
+    Порядок подгруппы делит порядок группы. Иными словами, <span class="arithmatex">\(|H|\)</span> делит <span class="arithmatex">\(|G|\)</span>, 
+    где <span class="arithmatex">\(H \subseteq G\)</span> <span class="arithmatex">\(-\)</span> подгруппа.</p>
+<p><strong>Следствие.</strong>
+    Порядок любого элемента делит порядок группы. То есть <span class="arithmatex">\(\forall g \in G : ord(g) \mid |G|\)</span>. 
+    Это следует из того, что <span class="arithmatex">\(ord(g) = | \langle g \rangle |\)</span>, а <span class="arithmatex">\(\langle g \rangle\)</span> <span class="arithmatex">\(-\)</span> подгруппа.</p>
+<p><strong>Следствие.</strong>
+    <span class="arithmatex">\(\forall g \in G : g^{|G|} = e\)</span>.</p>
+<p><strong>Следствие (Малая теорема Ферма).</strong>
+    Если <span class="arithmatex">\(p\)</span> <span class="arithmatex">\(-\)</span> простое, <span class="arithmatex">\((a, p) = 1\)</span>, то <span class="arithmatex">\(a^{p-1} \equiv 1 \pmod{p}\)</span>.
+    Это следствие можно доказать с помощью теории групп, ели взять <span class="arithmatex">\(G = (\mathbb{Z}_p \setminus \{0\}, \times)\)</span>. 
+    Тогда <span class="arithmatex">\(|G|=p-1, a^{|G|}=a^{p-1}=e\)</span>.</p>
+<p><strong>Следствие.</strong>
+    Пусть <span class="arithmatex">\(|G|=p\)</span>, где <span class="arithmatex">\(p\)</span> <span class="arithmatex">\(-\)</span> простое. 
+    Тогда <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> циклическая группа (в частности, коммутативная), и она порождается любым своим элементом (кроме нейтрального элемента <span class="arithmatex">\(e\)</span>).</p>
+<p><strong><em>Доказательство.</em></strong>
+    Возьмем <span class="arithmatex">\(g \in G, g \ne e\)</span>. Рассмотрим <span class="arithmatex">\(\langle g \rangle\)</span>. Так как <span class="arithmatex">\(\langle g \rangle\)</span> <span class="arithmatex">\(-\)</span> подгруппа, <span class="arithmatex">\(e \in \langle g \rangle\)</span>. 
+    Тогда <span class="arithmatex">\(|\langle g \rangle| \ge 2\)</span>, и это число делит <span class="arithmatex">\(|G| = p\)</span>, а так как <span class="arithmatex">\(p\)</span> <span class="arithmatex">\(-\)</span> простое, <span class="arithmatex">\(|\langle g \rangle| = |G|\)</span>, следовательно 
+    <span class="arithmatex">\(\langle g \rangle = G\)</span>.</p>
+<p><strong>Определение.</strong> 
+    Правый смежный класс элемента <span class="arithmatex">\(g\)</span> по подгруппе <span class="arithmatex">\(H \subseteq G\)</span> <span class="arithmatex">\(-\)</span> это множество <span class="arithmatex">\(Hg = \{hg \mid h \in H\}\)</span>.</p>
+<p><strong>Факт.</strong>
+    Правых смежных классов столько же, сколько левых, то есть <span class="arithmatex">\(\frac{|G|}{|H|} = [G:H]\)</span>.</p>
+<p><strong>Определение.</strong> 
+    Подгруппа <span class="arithmatex">\(H \subseteq G\)</span> называется нормальной, если <span class="arithmatex">\(\forall g \in G : gH = Hg\)</span>.</p>
+<p><strong>Пример.</strong>
+Если <span class="arithmatex">\(G\)</span> коммутативна, то любая подгруппа <span class="arithmatex">\(H \subseteq G\)</span> нормальная. </p>
+<p><strong>Утверждение.</strong>
+Для подгруппы <span class="arithmatex">\(H \subseteq G\)</span> эквивалентны следующие условия:</p>
+<ol>
+<li><span class="arithmatex">\(H\)</span> <span class="arithmatex">\(-\)</span> нормальная</li>
+<li><span class="arithmatex">\(\forall g \in G : gHg^{-1} \subseteq H\)</span></li>
+<li><span class="arithmatex">\(\forall g \in G : gHg^{-1} = H\)</span></li>
+</ol>
+<p><strong><em>Доказательство.</em></strong>
+    Докажем <span class="arithmatex">\(1 \Rightarrow 2\)</span>. Если <span class="arithmatex">\(gH = Hg\)</span>, то <span class="arithmatex">\(\forall h \in H \ \exists h' \in H : gh = h'g\)</span>. 
+    Тогда <span class="arithmatex">\(ghg^{-1}=h'gg^{-1}=h'\)</span> поэтому <span class="arithmatex">\(gHg^{-1} \subseteq H\)</span>.</p>
+<p>Теперь докажем <span class="arithmatex">\(2 \Rightarrow 3\)</span>. Покажем, что <span class="arithmatex">\(H \subseteq gHg^{-1}\)</span>. Возьмем <span class="arithmatex">\(h \in H\)</span>. Заметим, что <span class="arithmatex">\(h=gg^{-1}hgg^{-1} = g(g^{-1}hg)g^{-1}\)</span>. </p>
+<p>Тогда по (2) найдется <span class="arithmatex">\(h' \in H : h = gh'g^{-1}\)</span>, поэтому <span class="arithmatex">\(h \in gHg^{-1}\)</span>. 
+    И наконец <span class="arithmatex">\(3 \Rightarrow 1\)</span>. Заметим, что <span class="arithmatex">\(gH=Hg \Rightarrow^{\cdot g^{-1}} gHg^{-1} = H\)</span>.</p>
+<p><strong>Пример.</strong>
+    <span class="arithmatex">\(SL_n \subseteq GL_n\)</span>. Так как <span class="arithmatex">\(\forall A \in GL_n, B \in SL_n : \det (ABA^{-1})= \det B = 1\)</span>. </p>
+<p><strong>Определение.</strong> 
+    Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> некоторая группа, <span class="arithmatex">\(H \subseteq G\)</span> <span class="arithmatex">\(-\)</span> подгруппа. 
+    Обозначим за <span class="arithmatex">\(G / H\)</span> множество смежных классов. 
+    По определению положим <span class="arithmatex">\((g_1H)(g_2H)=g_1g_2H\)</span>. 
+    Ассоциативность выполняется, так как:
+    $$
+    \left( (g_1H)(g_2H) \right) (g_3H) =  (g_1H)\left( (g_2H) (g_3H)\right)  = g_1g_2g_3H
+    $$
+    В качестве нейтрального элемента возьмем <span class="arithmatex">\(eH\)</span>. Для каждого элемента <span class="arithmatex">\(gH\)</span> есть обратный <span class="arithmatex">\(g^{-1}H\)</span>.</p>
+<p>Докажем корректность этого определения. 
+Нам нужно проверить, что:
+$$
+(g_1h_1H)(g_2h_2H) = g_1h_1g_2h_2H = g_1g_2H
+$$
+Перепишем <span class="arithmatex">\(g_1h_1g_2h_2 = g_1g_2(g_2^{-1}h_1g_2)h_2\)</span>. Тогда мы хотим, чтобы <span class="arithmatex">\(g_2^{-1}h_1g_2 \in H\)</span>, 
+из этого следует, что <span class="arithmatex">\(H\)</span> <span class="arithmatex">\(-\)</span> нормальная подгруппа. То есть определение выше верно только для нормальной <span class="arithmatex">\(H\)</span>.</p>
+<p>Корректность обратного доказывается аналогично.</p>
+<p><strong>Упражнение.</strong>
+    Показать, что определение 15 верно только для нормальных групп.</p>
+<p><strong>Пример.</strong>
+    Возьмем <span class="arithmatex">\(G = (\mathbb{Z}, +), H = n\mathbb{Z}\)</span>. Тогда <span class="arithmatex">\(G/H=\mathbb{Z}_n = \{\overline{0}, \overline{1}, \dots, \overline{n-1}\}\)</span>.
+    Каждый элемент <span class="arithmatex">\(Z_n\)</span> является классом.</p>
+<h3 id="-">Как представлять фактор-группу?</h3>
+<p><strong>Определение.</strong> 
+    Пусть <span class="arithmatex">\((G, \circ), (F, \cdot)\)</span> <span class="arithmatex">\(-\)</span> группы. Тогда отображение <span class="arithmatex">\(\varphi : G \to F\)</span> называется гомоморфизмом, если:
+    <span class="arithmatex">\(\forall a, b \in G : \varphi(a \circ b) = \varphi(a) \cdot \varphi(b)\)</span></p>
+<p><strong>Лемма.</strong>
+    Если <span class="arithmatex">\(\varphi : G \to F\)</span> <span class="arithmatex">\(-\)</span> гомоморфизм, то:</p>
+<ol>
+<li><span class="arithmatex">\(\varphi(e_G) = e_F\)</span></li>
+<li><span class="arithmatex">\(\varphi(a^{-1}) = \varphi(a)^{-1}\)</span></li>
+</ol>
+<p><strong><em>Доказательство.</em></strong>
+    Докажем 1. <span class="arithmatex">\(\varphi(e_G e_G) = \varphi(e_G) = \varphi(e_G) \varphi(e_G)\)</span>. Умножим на <span class="arithmatex">\(\varphi(e_G)^{-1}\)</span>, 
+    тогда <span class="arithmatex">\(e_F = \varphi(e_G)\)</span>. Теперь 2. Заметим, что <span class="arithmatex">\(\varphi(a a^{-1}) = \varphi(e) = \varphi(a) \varphi(a^{-1}) \Leftrightarrow \varphi(a^{-1}) = \varphi(a)^{-1}\)</span>.</p>
+<p><strong>Определение.</strong> 
+    Гомоморфизм групп <span class="arithmatex">\(\varphi : G \to F\)</span> называется изоморфизмом, если <span class="arithmatex">\(\varphi\)</span> <span class="arithmatex">\(-\)</span> биекция. </p>
+<p><strong>Упражнение.</strong>
+    <span class="arithmatex">\(\varphi^{-1} : F \to G\)</span> тоже будет гомоморфизмом.</p>
+<p><strong>Определение.</strong> 
+    Группы <span class="arithmatex">\(G\)</span> и <span class="arithmatex">\(F\)</span> изоморфны и пишем <span class="arithmatex">\(G \cong F\)</span>, если <span class="arithmatex">\(\exists \varphi : G \to F\)</span> <span class="arithmatex">\(-\)</span> изоморфизм.</p>
+<p><strong>Теорема.</strong> </p>
+<ol>
+<li>Любая бесконечная циклическая группа <span class="arithmatex">\(G \cong (\mathbb{Z}, +)\)</span>.</li>
+<li>Любая конечная циклическая группа порядка <span class="arithmatex">\(n\)</span> <span class="arithmatex">\(\cong (\mathbb{Z}_n, +)\)</span>.</li>
+</ol>
+<p><strong><em>Доказательство.</em></strong>
+Сначала (a). <span class="arithmatex">\(G = \langle g \rangle = \{g^m \mid m \in \mathbb{Z} \}\)</span>. Тогда определим <span class="arithmatex">\(\varphi : G \to F\)</span>, 
+    где <span class="arithmatex">\(\varphi(g^m) = m\)</span>. </p>
+<p>Теперь (b). Мы знаем, что <span class="arithmatex">\(G = \langle g \rangle = \{g^0, g^1, \dots, g^{n-1}\}\)</span>. 
+    Положим <span class="arithmatex">\(\varphi(g^m) = m \pmod{n}\)</span>.</p>
+<p><strong>Пример.</strong>
+    Возьмем <span class="arithmatex">\((\mathbb{R}, +)\)</span> и <span class="arithmatex">\((\mathbb{R}_{&gt;0}, \times)\)</span>. Построим изоморфизм <span class="arithmatex">\(\varphi\)</span>, такой что 
+    <span class="arithmatex">\(\varphi(x) = e^x\)</span>. Тогда <span class="arithmatex">\(\varphi(x+y)=e^{x+y} = e^x e^y\)</span>.</p>
+<h2 id="2_1"><strong>Семинар 2</strong></h2>
+<p><a href="../static/algebra_sem2.pdf">Ссылка</a> на семинар в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="2_2"><strong>ДЗ 2</strong></h2>
+<p>Задачи, предлагавшиеся в ДЗ-2. </p>
+<p><strong>Задача 1.</strong>
+Найдите центры групп <span class="arithmatex">\(SL_n(\mathbb{R})\)</span> и <span class="arithmatex">\(A_n\)</span>.</p>
+<p><strong>Задача 2.</strong>
+Найдите подгруппу из чисел, изоморфную факторгруппе <span class="arithmatex">\(GL_n(\mathbb{R})/H\)</span>, где
+<span class="arithmatex">\(H = \{A \in GL_n(\mathbb{R}) \mid \det A = \pm 1\}\)</span>.</p>
+<p><strong>Задача 3.</strong>
+Найдите число гомоморфизмов из <span class="arithmatex">\(\mathbb{Z}_4\)</span> в <span class="arithmatex">\(GL_2(\mathbb{Z}_2)\)</span>.</p>
+<p><strong>Задача 4.</strong>
+Докажите, что <span class="arithmatex">\(\mathbb{Q}_{&gt;0}\)</span> изоморфна прямому произведению каких-то двух своих собственных подгрупп.</p>
+<p><strong>Задача 5.</strong>
+Коммутатором элементов <span class="arithmatex">\(g\)</span> и <span class="arithmatex">\(h\)</span> в группе <span class="arithmatex">\(G\)</span> называется элемент <span class="arithmatex">\([g, h] = ghg^{-1}h^{-1}\)</span>. 
+    Пусть подгруппа <span class="arithmatex">\(H\)</span> в <span class="arithmatex">\(G\)</span> содержит коммутаторы всех пар элементов из <span class="arithmatex">\(G\)</span>.
+    Докажите, что <span class="arithmatex">\(H\)</span> нормальна, а факторгруппа <span class="arithmatex">\(G/H\)</span> абелева.</p>
+<h2 id="3"><strong>Лекция 3</strong></h2>
+<p><a href="../static/algebra_lec3.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h3 id="-gh"><strong>Как представлять себе фактор-группу <span class="arithmatex">\(G/H\)</span>?</strong></h3>
+<p><strong>Определение.</strong>
+    С каждым гомоморфизмом <span class="arithmatex">\(\varphi : G \to F\)</span> связаны ядро <span class="arithmatex">\(\ker \varphi\)</span> и образ <span class="arithmatex">\(\text{Im} \varphi\)</span>. 
+    Формально <span class="arithmatex">\(\ker \varphi = \{g \in G \mid \varphi(g) = e_F\}, \text{Im} \varphi = \{f \in F \mid \exists g \in G : \varphi(g) = f\}\)</span>.</p>
+<p><strong>Упражнение.</strong>
+    <span class="arithmatex">\(\ker \varphi\)</span> и <span class="arithmatex">\(\text{Im} \varphi\)</span> являются подгруппами в <span class="arithmatex">\(G\)</span> и <span class="arithmatex">\(F\)</span> соответственно.</p>
+<p><strong>Лемма.</strong>
+    Гомоморфизм <span class="arithmatex">\(\phi : G \to F\)</span> инъективен <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(\ker \varphi = \{e_G\}\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    <span class="arithmatex">\(\Rightarrow\)</span> очевидно. </p>
+<p>Теперь <span class="arithmatex">\(\Leftarrow\)</span>. Пусть <span class="arithmatex">\(\varphi(a) = \varphi(c)\)</span>. Тогда <span class="arithmatex">\(\varphi(a) \cdot \varphi(c)^{-1} = \varphi(a) \cdot \varphi(c^{-1}) = \varphi(a c^{-1}) = e_F\)</span>.
+    Следовательно <span class="arithmatex">\(ac^{-1} \in \ker \varphi\)</span>, поэтому <span class="arithmatex">\(ac^{-1} = e_G \Leftrightarrow a = c\)</span>.</p>
+<p><strong>Следствие.</strong>
+    Гомоморфизм <span class="arithmatex">\(\varphi\)</span> является изоморфизмом тогда и только тогда, когда <span class="arithmatex">\(\ker \phi = \{e_G\}\)</span> и <span class="arithmatex">\(\text{Im} \varphi = F\)</span>.</p>
+<p><strong>Предложение.</strong>
+    <span class="arithmatex">\(\ker \varphi\)</span> <span class="arithmatex">\(-\)</span> нормальная подгруппа в <span class="arithmatex">\(G\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Надо проверить, что <span class="arithmatex">\(\forall g \in G, a \in \ker \varphi : gag^{-1} \in \ker \varphi\)</span>.
+    $$
+    \varphi (gag^{-1}) = \varphi (g) \varphi (a) \varphi (g^{-1}) = \varphi (g) e_F \varphi (g)^{-1} = e_F 
+    $$</p>
+<h3 id="-_1"><strong>Еще раз про фактор-группы.</strong></h3>
+<p>Пусть <span class="arithmatex">\(H \subseteq G\)</span> <span class="arithmatex">\(-\)</span> подгруппа. Тогда определим <span class="arithmatex">\(G /H = \{gH \mid g \in G\}\)</span>. 
+На нем операция <span class="arithmatex">\(\circ\)</span> действует как:
+$$
+(g_1H) \circ (g_2H) = g_1g_2H
+$$</p>
+<p><strong>Теорема о гомоморфизме.</strong>
+    Пусть <span class="arithmatex">\(\varphi : G \to F\)</span> <span class="arithmatex">\(-\)</span> гомоморфизм. Тогда <span class="arithmatex">\(G / \ker \varphi \cong \text{Im} \varphi\)</span>.</p>
+<p><strong><em>Доказательство (формальное).</em></strong>
+    Построим отображение <span class="arithmatex">\(\psi : G / \ker \phi \to \text{Im} \varphi\)</span>.
+    Положим <span class="arithmatex">\(\psi (g \ker \varphi) = \varphi(g)\)</span>. 
+    Проверим корректность. Возьмем <span class="arithmatex">\(gh, h \in \ker \varphi\)</span>. 
+    $$
+    \varphi(gh) = \varphi(g) \varphi(h) = \varphi(g) e_F = \varphi(g)
+    $$
+    Сюръективность верна по определению. Теперь проверим инъективность. 
+    Пусть <span class="arithmatex">\(\psi(g_1 \ker \varphi) = \psi(g_2 \ker \varphi)\)</span>. 
+    Тогда <span class="arithmatex">\(\varphi(g_1) = \varphi(g_2) \Leftrightarrow \varphi(g_1g_2^{-1})=e_F \Leftrightarrow g_1g_2^{-1} \in  \ker \varphi\)</span>. </p>
+<p>Осталось проверить, что
+    <span class="arithmatex">\(\psi((g_1 \ker \varphi)(g_2 \ker \varphi)) = \psi(g_1 \ker \varphi) \psi(g_2 \ker \varphi)\)</span>. 
+    $$
+    \psi((g_1 \ker \varphi)(g_2 \ker \varphi)) = \psi(g_1g_2 \ker \varphi) = \varphi(g_1g_2) = \varphi(g_1) \varphi(g_2) = \psi(g_1 \ker \varphi) \psi(g_2 \ker \varphi)
+    $$</p>
+<p><strong>Пример.</strong>
+    Обобщим пример <span class="arithmatex">\(\mathbb{Z} / n\mathbb{Z} = \mathbb{Z}_n\)</span>. 
+    Пусть <span class="arithmatex">\(G = (\mathbb{R}, +), H = (\mathbb{Z}, +)\)</span>. 
+    Рассмотрим гомоморфизм <span class="arithmatex">\(\varphi : \mathbb{R} \to (\mathbb{C} \setminus \{0\}, \times)\)</span>, причем <span class="arithmatex">\(\varphi(a) = e^{2 \pi ia}\)</span>.
+    Тогда образом будет окружность <span class="arithmatex">\(\{z \in \mathbb{C} \mid |z| = 1\}\)</span>, а ядром <span class="arithmatex">\(-\)</span> все целые числа, так как <span class="arithmatex">\(\forall a \in \mathbb{Z}:  e^{2 \pi i a} = 1\)</span>.</p>
+<p><strong>Определение.</strong>
+    Центр группы <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> это подмножество <span class="arithmatex">\(Z(G) = \{a \in G \mid \forall b \in G :  ab = ba\}\)</span>.</p>
+<p><strong>Предложение.</strong>
+    <span class="arithmatex">\(Z(G) \subseteq G\)</span> <span class="arithmatex">\(-\)</span> нормальная подгруппа. </p>
+<p>Для доказательства вспомним, что <span class="arithmatex">\((ab)^{-1} = b^{-1}a^{-1}\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Понятно, что <span class="arithmatex">\(e \in G\)</span>. Возьмем <span class="arithmatex">\(a, c \in Z(G)\)</span> и проверим, что <span class="arithmatex">\(ac^{-1} \in Z(G)\)</span>.
+    Возьмем произвольный <span class="arithmatex">\(b \in G\)</span> и проверим:
+    $$
+    (ac^{-1})b = ac^{-1} (b^{-1})^{-1} = a (b^{-1}c)^{-1} = a(b^{-1}c)^{-1} = a(cb^{-1})^{-1} = abc^{-1} = b(ac^{-1})
+    $$
+    Теперь проверим нормальность: <span class="arithmatex">\(\forall a \in Z(G), b \in G : bab^{-1} = abb^{-1} = a \in Z(G)\)</span>.</p>
+<p><strong>Замечание.</strong>
+    <span class="arithmatex">\(Z(G) = G\)</span> <span class="arithmatex">\(\Leftrightarrow\)</span> группа <span class="arithmatex">\(G\)</span> коммутативна. </p>
+<p><strong>Пример.</strong>
+    <span class="arithmatex">\(Z(S_n) = e, Z(GL_n) = \{\lambda E \mid \lambda \in \mathbb{R}\}\)</span>.</p>
+<p><strong>Определение.</strong>
+    Прямым произведением групп <span class="arithmatex">\(G_1, \dots, G_m\)</span> называется множество <span class="arithmatex">\(G_1 \times \dots \times G_n = \{(g_1, \dots, g_m) \mid \forall i : g_i \in G_i\}\)</span>.
+    Определим операцию <span class="arithmatex">\(\circ\)</span>:
+    $$
+    (g_1, \dots, g_m) \circ (g_1', \dots, g_m') = (g_1 g_1', \dots, g_m g_m')
+    $$
+    Нейтральным элементом будет <span class="arithmatex">\((1, \dots, 1)\)</span>. Определим обратное <span class="arithmatex">\((g_1, \dots, g_m)^{-1} = (g_1^{-1}, \dots, g_m^{-1})\)</span>.</p>
+<p><strong>Замечание.</strong>
+    <span class="arithmatex">\(G_1 \times \dots \times G_m\)</span> <span class="arithmatex">\(-\)</span> коммутативна <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(\forall i : G_i\)</span> <span class="arithmatex">\(-\)</span> коммутативна.</p>
+<p><strong>Замечание.</strong>
+    <span class="arithmatex">\(G_1 \times \dots \times G_m\)</span> <span class="arithmatex">\(-\)</span> конечна <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(\forall i : G_i\)</span> <span class="arithmatex">\(-\)</span> конечна.</p>
+<p><strong>Теорема (о факторизации по сомножителям).</strong>
+    Пусть <span class="arithmatex">\(H_1, \dots, H_m\)</span> <span class="arithmatex">\(-\)</span> нормальные подгруппы в группах <span class="arithmatex">\(G_1, \dots, G_m\)</span> соответственно.
+    Тогда подгруппа <span class="arithmatex">\(H_1 \times \dots \times H_m \subseteq G_1 \times \dots \times G_m\)</span> <span class="arithmatex">\(-\)</span> нормальная.
+    Кроме того, 
+    $$
+    (G_1 \times \dots \times G_m) / (H_1 \times \dots \times H_m) \cong (G_1 / H_1) \times \dots \times (G_m / H_m)
+    $$</p>
+<p><strong><em>Доказательство.</em></strong>
+    Докажем нормальность. 
+    $$
+    (g_1, \dots, g_m) (h_1, \dots, h_m) (g_1, \dots, g_m)^{-1} = (g_1h_1g^{-1}, \dots, g_mh_mg_m^{-1}) \in H_1 \times \dots \times H_m
+    $$
+    Сопоставим <span class="arithmatex">\((g_1, \dots, g_m) (H_1 \times \dots \times H_m) \to (g_1H_1, \dots, g_mH_m)\)</span>. 
+    Можно доказать по определению, что такое отображение является изоморфизмом.</p>
+<p>Теперь наша цель <span class="arithmatex">\(-\)</span> классифицировать конечные абелевы группы.</p>
+<p><strong>Теорема.</strong>
+    Если <span class="arithmatex">\(n = mk\)</span> <span class="arithmatex">\(-\)</span> произведение натуральных чисел, и <span class="arithmatex">\((m,k)=1\)</span>, то <span class="arithmatex">\(\mathbb{Z}_n \cong \mathbb{Z}_m \times \mathbb{Z}_k\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Это вариация КТО (китайской теоремы об остатках). Построим отображение <span class="arithmatex">\(\varphi(x) = (x \mod{m}, x \mod{k})\)</span>.
+    Корректность очевидна. Сохранение операции выполняется по определению. 
+    Для инъективности нужно проверить, что ядро тривиально. 
+    По определению, <span class="arithmatex">\(\ker \varphi = \{x \mid \varphi(x) = (0, 0)\}\)</span>. Тогда 
+    <span class="arithmatex">\(k \mid x \land m \mid x \Rightarrow k \mid n\)</span>, поэтому в ядре лежит только 0.</p>
+<p>Наконец поскольку <span class="arithmatex">\(|\mathbb{Z}_n| = |\mathbb{Z}_m| \cdot |\mathbb{Z}_k|\)</span>, инъективность влечет сюръективность. </p>
+<p><strong>Упражнение.</strong>
+    <span class="arithmatex">\(\mathbb{Z}_4 \not\cong \mathbb{Z}_2 \times \mathbb{Z}_2\)</span>, потому что в <span class="arithmatex">\(\mathbb{Z}_4\)</span> есть элементы порядка 4, а именно 1 и 3.</p>
+<p><strong>Следствие.</strong>
+    Пусть <span class="arithmatex">\(n = p_1^{\alpha_1} \cdot \dots \cdot p_s^{\alpha_s}\)</span>. 
+    Тогда <span class="arithmatex">\(\mathbb{Z}_n = \mathbb{Z}_{p_1^{\alpha_1}} \times \dots \times \mathbb{Z}_{p_s^{\alpha_s}}\)</span>.</p>
+<p>Всюду далее рассматриваем <span class="arithmatex">\((A, +)\)</span> <span class="arithmatex">\(-\)</span> абелеву группу. Также будем обозначать прямое произведение <span class="arithmatex">\(G_1 \times G_2\)</span> как <span class="arithmatex">\(A \oplus B\)</span>.
+Определим умножение на целое число:</p>
+<div class="arithmatex">\[
+\forall a \in A : s \cdot a = \begin{cases}
+    a + a + \dots + a, \text{$s$ раз, если $s&gt;0$} \\\ 
+    0, \text{если $s=0$} \\
+    (-a) + (-a) + \dots + (-a), \text{$-s$ раз, если $s&lt;0$} \\\ 
+\end{cases}
+\]</div>
+<p><strong>Определение.</strong>
+    Линейной комбинацией назовем <span class="arithmatex">\(s_1a_1 + \dots + s_ka_k\)</span>.</p>
+<p><strong>Определение.</strong>
+    Абелева группа <span class="arithmatex">\(a\)</span> называется конечно порожденной, если <span class="arithmatex">\(\exists a_1, \dots, a_n \in A\)</span>, такие что:
+    $$
+    \forall a \in A : a = s_1a_1 + \dots + s_na_n
+    $$
+    для некоторых <span class="arithmatex">\(s_i \in \mathbb{Z}\)</span>. </p>
+<p><strong>Определение.</strong>
+    Группа <span class="arithmatex">\(A\)</span> называется свободной, если в ней есть базис, то есть 
+    такие <span class="arithmatex">\(a_1, \dots, a_n\)</span>, что 
+    $$
+    \forall a \in A : a = a_1s_1 + \dots + a_n s_n
+    $$
+    при единственном наборе <span class="arithmatex">\(s_1, \dots, s_n \ (s_i \in \mathbb{Z})\)</span>.</p>
+<h2 id="4"><strong>Лекция 4</strong></h2>
+<p><a href="../static/algebra_lec4.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h3 id="_4"><strong>Абелевы группы</strong></h3>
+<p><strong>Пример (конечно порожденная, но не свободная абелева группа).</strong>
+    Подходит любая конечная абелева группа. Например, <span class="arithmatex">\(\mathbb{Z}_n\)</span>. 
+    Докажем, почему она не свободна. Пусть <span class="arithmatex">\(a_1, \dots, a_n\)</span> <span class="arithmatex">\(-\)</span> базис. 
+    Но тогда <span class="arithmatex">\(0 = 0 \cdot a_1 + \dots + 0 \cdot a_n = |A| \cdot a_1 + \dots + |A| \cdot a_n\)</span>.</p>
+<p><strong>Определение.</strong>
+    Рангом свободной абелевой группы <span class="arithmatex">\(A\)</span> называется число элементов в ее базисе. 
+    Обозначается как <span class="arithmatex">\(\text{rk} A\)</span>.</p>
+<p><strong>Пример.</strong>
+    Пусть <span class="arithmatex">\(A = \mathbb{Z}^n = \{(x_1, \dots, x_n) \in \mathbb{R}^n \mid x_i \in \mathbb{Z}\}\)</span> (это решетка!). 
+    Покажем, что она свободна. Выберем в <span class="arithmatex">\(A\)</span> стандартный базис <span class="arithmatex">\(e_1, \dots, e_n\)</span>. 
+    Тогда любой вектор <span class="arithmatex">\((x_1, \dots, x_n)\)</span> раскладывается в <span class="arithmatex">\(x_1e_1 + \dots + x_ne_n\)</span>.
+    Понятно, что такое представление единственно.</p>
+<p><strong>Предложение.</strong>
+    Любая свободная абелева группа <span class="arithmatex">\(A\)</span> изоморфна <span class="arithmatex">\(\mathbb{Z}^n\)</span>, где <span class="arithmatex">\(n = \text{rk} A\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Зафиксируем базис <span class="arithmatex">\(a_1, \dots, a_n\)</span> в <span class="arithmatex">\(A\)</span>. 
+    Установим изоморфизм <span class="arithmatex">\(\varphi : A \to \mathbb{Z}^n\)</span>, где <span class="arithmatex">\(\varphi(a) = \varphi(s_1a_1) + \dots + \varphi(s_na_n) = (s_1, \dots, s_n)\)</span>.
+    Понятно, что разным <span class="arithmatex">\(a_1, a_2\)</span> сооветствуют разные векторы, так как разложение единственно, то есть <span class="arithmatex">\(\varphi\)</span> <span class="arithmatex">\(-\)</span> инъекция. 
+    С другой стороны, это сюръекция, потому что каждому набору <span class="arithmatex">\(s_1, \dots, s_n\)</span> можно найти <span class="arithmatex">\(a = s_1a_1 + \dots + s_na_n\)</span>. </p>
+<p>Наконец покажем, что <span class="arithmatex">\(\varphi\)</span> сохраняет операцию. Распишем <span class="arithmatex">\(\varphi(a+b)\)</span>:
+    $$
+    \varphi(a+b) = \varphi((s_1+s_1')a_1 + \dots + (s_n+s_n')a_n) = (s_1 + s_1', \dots, s_n + s_n') = \varphi(a) + \varphi(b) = $$
+    $$= (s_1, \dots, s_n) + (s_1', \dots, s_n')
+    $$</p>
+<p><strong>Предложение.</strong>
+    Ранг свободной абелевой группы определен корректно, то есть не зависит от выбора базиса. </p>
+<p><strong><em>Доказательство.</em></strong>
+    От противного. Пусть в <span class="arithmatex">\(A\)</span> есть базисы <span class="arithmatex">\(a_1, \dots, a_n\)</span> и <span class="arithmatex">\(b_1, \dots, b_m\)</span>. Без ограничения общности <span class="arithmatex">\(m&gt;n\)</span>.
+    Пусть <span class="arithmatex">\(b_1=\alpha_{11} a_1 + \dots + \alpha_{1n} a_n, \dots, b_n = \alpha_{m1} a_1 + \dots + \alpha_{mn}a_n\)</span>. 
+    Запишем в матрицу:
+    $$
+    C = \begin{pmatrix}
+        \alpha_{11} &amp; \dots &amp; \alpha_{1n} \\ 
+        \vdots &amp; \ddots &amp; \vdots \\ 
+        \alpha_{m1} &amp; \dots &amp; \alpha_{mn} \\ 
+    \end{pmatrix}
+    $$
+    Тогда строки матрицы линейно зависимы над <span class="arithmatex">\(\mathbb{Q}\)</span>, значит существует ненулевой набор <span class="arithmatex">\(\lambda_1, \dots, \lambda_m\)</span>, такой что
+    $$
+    \lambda_1 C_{(1)} + \dots + \lambda_m C_{(m)} = (0, \dots, 0)
+    $$
+    Можно считать, что <span class="arithmatex">\(\lambda_i \in \mathbb{Z}\)</span> (если не так, то домножить на НОК знаменателей). 
+    Тогда заметим, что 
+    $$
+    \lambda_1 b_1 + \dots + \lambda_m b_m = 0 b_1 + \dots + 0 b_m = (0, \dots, 0)
+    $$
+    Получили две разные записи нуля, противоречие с тем, что <span class="arithmatex">\(b_1, \dots, b_m\)</span> <span class="arithmatex">\(-\)</span> базис. </p>
+<h3 id="_5"><strong>Классификация базисов</strong></h3>
+<p>Пусть <span class="arithmatex">\(e_1, \dots, e_n\)</span> <span class="arithmatex">\(-\)</span> базис в <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(e_1', \dots, e_1'\)</span> <span class="arithmatex">\(-\)</span> какой-то набор из <span class="arithmatex">\(A\)</span>. 
+Тогда 
+$$
+(e_1', \dots, e_n') = (e_1, \dots, e_n) \cdot C
+$$
+где <span class="arithmatex">\(C\)</span> <span class="arithmatex">\(-\)</span> целочисленная матрица размером <span class="arithmatex">\(n \times n\)</span>.
+Тогда столбцы <span class="arithmatex">\(C\)</span> <span class="arithmatex">\(-\)</span> координаты <span class="arithmatex">\(e_1', \dots, e_n'\)</span> в базисе <span class="arithmatex">\(e_1, \dots, e_n\)</span>.</p>
+<p><strong>Предложение.</strong>
+    Векторы <span class="arithmatex">\(e_1', \dots, e_n'\)</span> также являются базисом <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(\det C = \pm 1\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+Докажем <span class="arithmatex">\(\Rightarrow\)</span>. Если <span class="arithmatex">\(e_1', \dots, e_n'\)</span> <span class="arithmatex">\(-\)</span> базис, то через них можно выразить <span class="arithmatex">\(e_1, \dots, e_n\)</span>:
+    $$
+    (e_1, \dots, e_n) = (e_1', \dots, e_n') D = (e_1, \dots, e_n) CD
+    $$
+    Отсюда следует, что <span class="arithmatex">\(CD = E\)</span>. Тогда <span class="arithmatex">\(\det CD = \det C \det D = 1\)</span>. 
+    Понятно, что если матрица целочисленна, то <span class="arithmatex">\(\det C, \det D \in \{\pm 1\}\)</span>.</p>
+<p>Теперь докажем <span class="arithmatex">\(\Leftarrow\)</span>. Заметим, что <span class="arithmatex">\(C^{-1}\)</span> целочисленна. По формуле обратной матрицы через присоединенную 
+    получаем, что <span class="arithmatex">\(\det C = \det C^{-1} = 1\)</span>. Тогда:
+    $$
+    (e_1', \dots, e_n') = (e_1, \dots, e_n) C \Rightarrow (e_1', \dots, e_n')C^{-1} = (e_1, \dots, e_n)
+    $$</p>
+<p>Отсюда делаем вывод, что векторы <span class="arithmatex">\(e_1, \dots, e_n\)</span> выражаются через <span class="arithmatex">\(e_1', \dots, e_n'\)</span> с целыми коэффициентами. 
+    Получаем, что все векторы выражаются через <span class="arithmatex">\(e_1', \dots, e_n'\)</span> с целыми коэффициентами. 
+    Тогда <span class="arithmatex">\(e_1', \dots, e_n'\)</span> порождают абелеву группу <span class="arithmatex">\(A\)</span>.</p>
+<p>Осталось показать, что любой элемент выражается единственным образом. 
+    Пусть <span class="arithmatex">\(s_1'e_1' + \dots + s_n' e_n' = s_1''e_1' + \dots + s_n'' e_n'\)</span>. Или что то же самое:
+    $$
+    (e_1', \dots, e_n') \cdot \begin{pmatrix}
+        s_1' \\ \vdots \\ s_n'
+    \end{pmatrix} = (e_1', \dots, e_n') \cdot \begin{pmatrix}
+        s_1'' \\ \vdots \\ s_n''
+    \end{pmatrix}
+    $$
+    $$
+    (e_1, \dots, e_n) C \cdot \begin{pmatrix}
+        s_1' \\ \vdots \\ s_n'
+    \end{pmatrix} = (e_1, \dots, e_n) C \cdot \begin{pmatrix}
+        s_1'' \\ \vdots \\ s_n''
+    \end{pmatrix} \Leftrightarrow C \cdot \begin{pmatrix}
+        s_1' \\ \vdots \\ s_n'
+    \end{pmatrix} = C \cdot \begin{pmatrix}
+        s_1'' \\ \vdots \\ s_n''
+    \end{pmatrix}
+    $$</p>
+<p>Так как обратимая матрица существует, домножим на нее слева. Тогда справедливо <span class="arithmatex">\(s_i' = s_i''\)</span> для любого <span class="arithmatex">\(i\)</span>, что и завершает доказательство.</p>
+<p><strong>Теорема.</strong>
+    Всякая подгруппа <span class="arithmatex">\(N\)</span> свободной абелевой группы <span class="arithmatex">\(L\)</span> ранга <span class="arithmatex">\(n\)</span> тоже свободна, причем ее ранг <span class="arithmatex">\(\le n\)</span>. </p>
+<p><strong>Замечание.</strong>
+    В линейной алгебре это означает, что для любого подпространства <span class="arithmatex">\(U \subseteq V\)</span> справедливо <span class="arithmatex">\(\dim U \le \dim V\)</span>. 
+    Причем <span class="arithmatex">\(\dim U = \dim V \Leftrightarrow U = V\)</span>. 
+    Для свободных групп в алгебре это неверно, например для <span class="arithmatex">\(\mathbb{Z}\)</span> и <span class="arithmatex">\(2\mathbb{Z}\)</span>. 
+    Ранги этих групп равны 1, но они не равны. </p>
+<p><strong><em>Доказательство.</em></strong>
+Докажем индукцией по <span class="arithmatex">\(n\)</span>. 
+    В качестве базы докажем для <span class="arithmatex">\(n=0\)</span>. 
+    Тогда любая подгруппа равна самой себе. </p>
+<p>Теперь шаг. Пусть <span class="arithmatex">\(n&gt;0\)</span>, <span class="arithmatex">\(e_1, \dots, e_n\)</span> <span class="arithmatex">\(-\)</span> базис <span class="arithmatex">\(L\)</span>. 
+    Определим <span class="arithmatex">\(L_1 = \{s_1e_1 + \dots + s_{n-1} e_{n-1} \mid s_i \in \mathbb{Z}\} = \mathbb{Z}e_1 + \dots + \mathbb{Z} e_{n-1}\)</span>.
+    Тогда это свободная абелева группа ранга <span class="arithmatex">\(n-1\)</span>.
+    Пусть <span class="arithmatex">\(N_1 = N \cap L_1\)</span>. Тогда это подгруппа в <span class="arithmatex">\(L_1\)</span>, и по предположению индукции в <span class="arithmatex">\(N_1\)</span> есть базис <span class="arithmatex">\(f_1, \dots, f_m\)</span>, где <span class="arithmatex">\(m \le n-1\)</span>. 
+    Рассмотрим отображение <span class="arithmatex">\(\varphi : N \to \mathbb{Z}\)</span>, причем <span class="arithmatex">\(\varphi(s_1e_1 + \dots + s_ne_n) = s_n\)</span>. 
+    Ясно, что это гомоморфизм и <span class="arithmatex">\(\ker \varphi = N_1, \text{Im} \varphi = k \mathbb{Z}\)</span>, где <span class="arithmatex">\(k \in \mathbb{Z}_{\ge 0}\)</span>.
+    Рассмотрим 2 случая:</p>
+<ol>
+<li><span class="arithmatex">\(k=0\)</span>. Тогда <span class="arithmatex">\(N = N_1\)</span>, и все доказано. </li>
+<li><span class="arithmatex">\(k&gt;0\)</span>. Пусть <span class="arithmatex">\(f_{m+1} = s_1e_1 + \dots + s_{n-1} e_{n-1} + k e_n \mapsto k\)</span>. Докажем, что 
+        <span class="arithmatex">\(f_1, \dots, f_{m+1}\)</span> <span class="arithmatex">\(-\)</span> базис в <span class="arithmatex">\(N\)</span>. Тогда <span class="arithmatex">\(\text{rk} = m + 1 \le (n - 1) + 1 = n\)</span>. 
+        Заметим, что <span class="arithmatex">\(\forall f \in N : \varphi(f) = k \cdot c\)</span>. Тогда <span class="arithmatex">\(\varphi(f - c f_{m+1}) = kc - kc = 0\)</span>. 
+        Тогда <span class="arithmatex">\(f - c f_{m+1} \in N_1\)</span>, а тогда <span class="arithmatex">\(f-cf_{m+1} = s_1f_1 + \dots + s_mf_m\)</span>, тогда <span class="arithmatex">\(f=s_1f_1 + \dots + s_mf_m+cf_{m+1}\)</span>, 
+        то есть любой вектор представим. </li>
+</ol>
+<p>Осталось показать, что все представления различны. Пусть какие-то совпали:
+        $$
+        s_1f_1 + \dots + s_{m+1} f_{m+1} = s_1' f_1 + \dots + s_{m+1}' f_{m+1}
+        $$</p>
+<p>Посмотрим на последнюю координату. Тогда <span class="arithmatex">\(s_{m+1} k = s_{m+1}' k \Leftrightarrow s_{m+1}=s_{m+1}'\)</span>, поэтому 
+        последнюю часть можно сократить. Тогда <span class="arithmatex">\(s_1=s_1', \dots, s_m = s_m'\)</span>, поскольку <span class="arithmatex">\(f_1, \dots, f_m\)</span> базис по определению.</p>
+<p><strong>Теорема о согласованных базисах.</strong>
+    Для всякой подгруппы <span class="arithmatex">\(N\)</span> свободной абелевой группы <span class="arithmatex">\(L\)</span> 
+    существует такой базис <span class="arithmatex">\(e_1, \dots, e_n\)</span> в <span class="arithmatex">\(L\)</span>, <span class="arithmatex">\(m \in \mathbb{Z}_{\ge 0}, m \le n\)</span> и <span class="arithmatex">\(u_1, \dots, u_n \ (u_i \in \mathbb{N}, u_i \mid u_{i+1})\)</span>, 
+    такие что <span class="arithmatex">\(u_1e_1, \dots, u_me_m\)</span> <span class="arithmatex">\(-\)</span> базис в подгруппе <span class="arithmatex">\(N\)</span>.</p>
+<h2 id="5"><strong>Лекция 5</strong></h2>
+<p><a href="../static/algebra_lec5.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h3 id="_6"><strong>Доказательство теоремы о согласованных базисах</strong></h3>
+<p><strong>Определение.</strong>
+    Элементарные целочисленные преобразования матрицы <span class="arithmatex">\(C = (c_{ij})\)</span> над строками (и столбцами) бывают 3 типов:</p>
+<ol>
+<li>Прибавить к <span class="arithmatex">\(i\)</span>-ой строке <span class="arithmatex">\(j\)</span>-ую, умноженную на <span class="arithmatex">\(\lambda\)</span></li>
+<li>Перестановка <span class="arithmatex">\(i\)</span>-ой и <span class="arithmatex">\(j\)</span>-ой строки</li>
+<li>Умножение строки на <span class="arithmatex">\(\pm 1\)</span></li>
+</ol>
+<p><strong>Определение.</strong>
+    Матрица <span class="arithmatex">\(C\)</span> размером <span class="arithmatex">\((n, m)\)</span> диагональна, если она имеет вид
+    $$
+    C = \begin{pmatrix}
+        * &amp; \ &amp; \ &amp; \ &amp; \ \\ 
+        \ &amp; * \ &amp; \ &amp; \ \\ 
+        \ &amp; \ &amp; * &amp; \ &amp; \
+    \end{pmatrix}
+    $$
+    то есть если <span class="arithmatex">\(i \ne j\)</span>, то <span class="arithmatex">\(c_{ij} = 0\)</span>. Обозначается как <span class="arithmatex">\(\text{diag}(u_1, \dots, u_p)\)</span>, где <span class="arithmatex">\(p = \min(n, m)\)</span>.</p>
+<p><strong>Предложение.</strong>
+    Любую прямоугольную целочисленную матрицу <span class="arithmatex">\(C\)</span> элементарными преобразованиями строк и столбцов можно привести 
+    к диагональному виду <span class="arithmatex">\(\text{diag}(u_1, \dots, u_p)\)</span>, где <span class="arithmatex">\(u_1 \ge 0, \dots, u_p \ge 0, \forall i : u_i \mid u_{i+1}\)</span>.</p>
+<p><strong><em>Доказательство (предложения).</em></strong>
+    Без ограничения общности считаем, что <span class="arithmatex">\(c_{11}&gt;0\)</span>. 
+    Хотим, чтобы любой элемент 1 строки и 1 столбца делился на <span class="arithmatex">\(c_{11}\)</span>.
+    Разберем для строки. Будем делать что-то наподобие алгоритма Евклида. 
+    Пусть <span class="arithmatex">\(c_{1i}\)</span> не делится на <span class="arithmatex">\(c_{11}\)</span>.
+    Представим <span class="arithmatex">\(c_{1i} = c_{11}q + r\)</span>, тогда <span class="arithmatex">\(q\)</span> раз вычтем из <span class="arithmatex">\(c_{1i}\)</span> число <span class="arithmatex">\(c_{11}\)</span>. 
+    Затем поменяем местами столбцы <span class="arithmatex">\(i\)</span> и <span class="arithmatex">\(1\)</span>. Тогда за конечное число шагов мы сделаем так, что <span class="arithmatex">\(c_{1i}\)</span> делится на <span class="arithmatex">\(c_{11}\)</span>.
+    После этого мы можем занулить все элементы 1 строки и 1 столбца, кроме <span class="arithmatex">\(c_{11}\)</span>. </p>
+<p>Теперь мы хотим, чтобы все элементы <span class="arithmatex">\(c_{ij}\)</span> делились на <span class="arithmatex">\(c_{11}\)</span>.
+    Пусть какой-то <span class="arithmatex">\(c_{ij}\)</span> не делится на <span class="arithmatex">\(c_{11}\)</span>. Поднимем его в первый столбец и запустим 
+    для него процедуру из 1 абзаца.</p>
+<p>После этого мы получим матрицу вида:
+    $$
+    C = \begin{pmatrix}
+        c_{11} &amp; \ \\
+        \ &amp; c_{11} \cdot C'
+    \end{pmatrix}
+    $$</p>
+<p>Теперь для матрицы <span class="arithmatex">\(C'\)</span> продолжим это рассуждение по индукции. Далее получим:</p>
+<div class="arithmatex">\[
+    C = \begin{pmatrix}
+        c_{11} &amp; \ &amp; \ \\
+        \ &amp; c_{22} &amp; \ \\\ 
+        \ &amp; \ &amp; c_{22} \cdot C''
+    \end{pmatrix}
+    \]</div>
+<p>где <span class="arithmatex">\(c_{22}\)</span> делится на <span class="arithmatex">\(c_{11}\)</span> и так далее. </p>
+<p><strong><em>Доказательство (теоремы о согласованных базисах).</em></strong>
+    Теперь вернемся к доказательству теоремы. Пусть <span class="arithmatex">\(e_1, \dots, e_n\)</span> <span class="arithmatex">\(-\)</span> базис в <span class="arithmatex">\(N\)</span>, <span class="arithmatex">\(f_1, \dots, f_m\)</span> <span class="arithmatex">\(-\)</span> базис в <span class="arithmatex">\(L\)</span>. 
+Мы знаем, что <span class="arithmatex">\((f_1, \dots, f_m) = (e_1, \dots, e_n) \cdot C\)</span>, где <span class="arithmatex">\(C\)</span> имеет размеры <span class="arithmatex">\(n \times m\)</span>. 
+Заметим, что целочисленные элементарные преоразования строк (столбцов) соответствуют заменам базиса в <span class="arithmatex">\(L\)</span> (или в <span class="arithmatex">\(N\)</span>, если делали преобразования столбцов).</p>
+<p><strong>Пример.</strong>
+    При замене строк мы меняем базис <span class="arithmatex">\(f\)</span>, столбцов <span class="arithmatex">\(-\)</span> <span class="arithmatex">\(e\)</span>.
+    $$
+    (f_1, f_2) = (e_1, e_2, e_3) \cdot \begin{pmatrix}
+        1 &amp; 0 \\ 
+        2 &amp; -2 \\ 
+        3 &amp; 7
+    \end{pmatrix}
+    $$</p>
+<p>Цепочкой преобразований строк и столбцов приведем <span class="arithmatex">\(C\)</span> к диагональному виду. Получим</p>
+<div class="arithmatex">\[
+(f_1', \dots, f_m') = (e_1', \dots, e_n') \cdot \text{diag}(u_1, \dots, u_m)
+\]</div>
+<p>Из этого следует, что 
+$$
+f_1' = u_1 e_1'
+$$
+$$
+f_2' = u_2 e_2'
+$$
+$$
+\vdots$$
+$$
+f_m' = u_m e_m'
+$$</p>
+<p>Что и требовалось.</p>
+<p><strong>Следствие.</strong>
+    <span class="arithmatex">\(L / N \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m} \oplus \underbrace{\mathbb{Z} \oplus \dots \oplus \mathbb{Z}}_{n-m \text{ раз }}\)</span> </p>
+<p><strong><em>Доказательство.</em></strong>
+Выберем согласованные базисы <span class="arithmatex">\(e_1, \dots, e_m, e_{m+1}, \dots, e_n\)</span> и <span class="arithmatex">\(u_1e_1, \dots, u_m e_m\)</span>. 
+    Тогда </p>
+<div class="arithmatex">\[L / N = \frac{\mathbb{Z} \oplus \dots \oplus \mathbb{Z} \oplus \mathbb{Z} \dots \oplus \mathbb{Z}}{u_1\mathbb{Z} \oplus \dots \oplus u_m\mathbb{Z} \oplus \{0\} \oplus \dots \oplus \{0\}} \cong \mathbb{Z} / u_1\mathbb{Z} \oplus \dots \oplus \mathbb{Z} / u_m\mathbb{Z} \oplus \dots \oplus \mathbb{Z}/\{0\} \oplus \dots \oplus \mathbb{Z}/\{0\} \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}\]</div>
+<p><strong>Определение.</strong>
+    Числа <span class="arithmatex">\(u_1, \dots, u_m\)</span> называют инвариантными множителями для пары <span class="arithmatex">\((L, N)\)</span>. 
+    Они не зависят от выбора базиса. </p>
+<p><strong>Определение.</strong>
+    Конечная абелева группа <span class="arithmatex">\(A\)</span> называется примарной, если <span class="arithmatex">\(|A| = p^k\)</span>, где <span class="arithmatex">\(p\)</span> <span class="arithmatex">\(-\)</span> простое, а <span class="arithmatex">\(k \in \mathbb{N}\)</span>.
+    Для конечной неабелевой группы говорят <span class="arithmatex">\(p\)</span>-группа. </p>
+<p><strong>Теорема.</strong>
+    Всякая конечно порожденная абелева группа <span class="arithmatex">\(A\)</span> разлагается в прямую сумму 
+    примарных и бесконечных циклических групп. Формально</p>
+<div class="arithmatex">\[
+A \cong \mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_s^{k_s}} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
+\]</div>
+<p>где <span class="arithmatex">\(p_1, \dots, p_s\)</span> <span class="arithmatex">\(-\)</span> простые (не обязательно различные), а <span class="arithmatex">\(k_i \in \mathbb{N}\)</span>. 
+    Кроме того, число бесконечных слагаемых и число и порядки примарных слагаемых определены однозначно.</p>
+<p><strong>Пример.</strong>
+    $$
+    A \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_4 \oplus \mathbb{Z}_9 \oplus \mathbb{Z} \cong \mathbb{Z}_4 \oplus \mathbb{Z}_9 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z} 
+    $$
+Но 6 <span class="arithmatex">\(-\)</span> не примарное число, поэтому <span class="arithmatex">\(\mathbb{Z}_6 \cong \mathbb{Z}_2 \times \mathbb{Z}_3\)</span> не является контрпримером.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Пусть <span class="arithmatex">\(a_1, \dots, a_n\)</span> <span class="arithmatex">\(-\)</span> система порождающих группы <span class="arithmatex">\(A\)</span>. 
+    Тогда рассмотрим гомоморфизм <span class="arithmatex">\(\varphi : \mathbb{Z}^n \to A\)</span>, причем <span class="arithmatex">\((s_1, \dots, s_n) \mapsto^{\varphi} (s_1a_1, \dots, s_na_n)\)</span>. 
+    Заметим, что <span class="arithmatex">\(\varphi\)</span> <span class="arithmatex">\(-\)</span> сюръективен, потому что любой элемент <span class="arithmatex">\(A\)</span> представим в виде линейной комбинации. 
+    Вспомним, что </p>
+<div class="arithmatex">\[
+A = \text{Im} \varphi \cong \mathbb{Z}^n / \ker \varphi = L / N \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_n} \oplus \mathbb{Z} \oplus \dots \oplus \mathbb{Z}
+\]</div>
+<p>Каждое <span class="arithmatex">\(u_i\)</span> разложим на простые множители, <span class="arithmatex">\(u_i = p_{1i}^{k_{1i}} \cdot \dots \cdot p_{si}^{k_{si}}\)</span>. 
+Тогда </p>
+<div class="arithmatex">\[
+\mathbb{Z}_{u_i} \cong \mathbb{Z}_{p_{1i}^{k_{1i}}} \oplus \dots \oplus \mathbb{Z}_{p_{si}^{k_{si}}}
+\]</div>
+<p>Таким образом доказали существование. Единственность доказывается технически и является факультативным материалом.</p>
+<p><strong>Следствие.</strong>
+    Каждая конечная абелева группа изоморфна <span class="arithmatex">\(\mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_s^{k_s}} \cong \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m}\)</span>, 
+    где <span class="arithmatex">\(u_i \mid u_{i+1}\)</span>.</p>
+<p><strong>Определение.</strong>
+    Экспонента конечной абелевой группы <span class="arithmatex">\(A\)</span> <span class="arithmatex">\(-\)</span> такое число <span class="arithmatex">\(\text{exp}(A)\)</span>, равное НОК всех порядков элементов в <span class="arithmatex">\(A\)</span>.</p>
+<p><strong>Упражнение.</strong>
+    Показать, что <span class="arithmatex">\(\text{exp}(A) = \min \{m \mid \forall a \in A : ma = 0 \}\)</span>.</p>
+<p><strong>Предложение.</strong>
+    Если <span class="arithmatex">\(A = \mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m}\)</span>, то <span class="arithmatex">\(\text{exp}(A) = u_m\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Возьмем <span class="arithmatex">\(a = (\vec{c_1}, \dots, \vec{c_m})\)</span>, где <span class="arithmatex">\(c_i \in Z_{u_i}\)</span>. Тогда <span class="arithmatex">\(u_m a = (\vec{0}, \dots, \vec{0})\)</span>. 
+    С другой стороны <span class="arithmatex">\((\vec{0}, \dots, \vec{0}, \vec{1})\)</span> имеет порядок <span class="arithmatex">\(u_m\)</span>. Из первого получаем, что <span class="arithmatex">\(\text{exp}(A) \le u_m\)</span>, из второго <span class="arithmatex">\(-\)</span> что <span class="arithmatex">\(\text{exp}(A) \ge u_m\)</span>, 
+    то есть <span class="arithmatex">\(\text{exp}(A) = u_m\)</span>.</p>
+<p><strong>Следствие.</strong>
+    <span class="arithmatex">\(A\)</span> <span class="arithmatex">\(-\)</span> циклическая $\Leftrightarrow $ <span class="arithmatex">\(|A| = \text{exp}(A)\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    <span class="arithmatex">\(A\)</span> <span class="arithmatex">\(-\)</span> циклическая <span class="arithmatex">\(\Leftrightarrow\)</span> в разложении <span class="arithmatex">\(\mathbb{Z}_{u_1} \oplus \dots \oplus \mathbb{Z}_{u_m}\)</span> только одно слагаемое, пусть <span class="arithmatex">\(\mathbb{Z}_k\)</span>. 
+    По предложению получаем, что <span class="arithmatex">\(\text{exp}(A) = k\)</span>.</p>
+<h2 id="3_1"><strong>ДЗ 3</strong></h2>
+<p>Задачи, предлагавшиеся в ДЗ-3. </p>
+<p><strong>Задача 1.</strong>
+Приведите пример счётной не конечно порождённой абелевой группы.</p>
+<p><strong>Задача 2.</strong>
+Пусть <span class="arithmatex">\(A\)</span> <span class="arithmatex">\(-\)</span> свободная абелева группа с базисом <span class="arithmatex">\(e_1, e_2, e_3\)</span>, а <span class="arithmatex">\(B\)</span> <span class="arithmatex">\(-\)</span> 
+    её подгруппа, порождённая элементами <span class="arithmatex">\(f_1, f_2, f_3\)</span>, где</p>
+<p>$$
+    f_1 = 7e_1 + 12e_2 + 2e_3;
+    f_2 = 6e_1 + 11e_2 + e_3;
+    f_3 = 7e_1 + 17e_2 - 3e_3.
+    $$
+Используя теорему о согласованных базисах, вычислите факторгруппу <span class="arithmatex">\(A/B\)</span>.</p>
+<p><strong>Задача 3.</strong>
+Пусть <span class="arithmatex">\(A\)</span> <span class="arithmatex">\(-\)</span> свободная абелева группа с базисом <span class="arithmatex">\(e_1, \dots, e_n\)</span>, <span class="arithmatex">\(B\)</span> <span class="arithmatex">\(-\)</span> её подгруппа с порождающими элементами</p>
+<div class="arithmatex">\[
+    f_j = \sum \limits_{i=1}^n a_{ij} e_i, \quad j = 1, \dots, n, \quad a_{ij} \in \mathbb{Z}
+    \]</div>
+<p>Доказать, что факторгруппа <span class="arithmatex">\(A/B\)</span> конечна тогда и только тогда, когда <span class="arithmatex">\(\det(a_{ij}) \ne 0\)</span>, и при этом <span class="arithmatex">\(|A/B| = |\det (a_{ij})|\)</span>.</p>
+<p><strong>Задача 4.</strong>
+Подгруппа <span class="arithmatex">\(B\)</span> в свободной абелевой группе <span class="arithmatex">\(A\)</span> с базисом <span class="arithmatex">\(e_1, e_2\)</span> порождена
+элементами <span class="arithmatex">\(e_1\)</span> и <span class="arithmatex">\(6e_2\)</span>. Приведите пример такой подгруппы <span class="arithmatex">\(C\)</span> в <span class="arithmatex">\(B\)</span>, для которой не
+существует тройки базисов <span class="arithmatex">\(a, b, c\)</span> в <span class="arithmatex">\(A, B, C\)</span> соответственно, что одновременно <span class="arithmatex">\(a\)</span> и <span class="arithmatex">\(b\)</span> <span class="arithmatex">\(-\)</span>
+пара согласованных базисов в <span class="arithmatex">\(A\)</span> и <span class="arithmatex">\(B\)</span>, <span class="arithmatex">\(b\)</span> и <span class="arithmatex">\(c\)</span> <span class="arithmatex">\(-\)</span> пара согласованных базисов в <span class="arithmatex">\(B\)</span> и <span class="arithmatex">\(C\)</span>.</p>
+<p><strong>Задача 5.</strong>
+Докажите, что всякая дискретная подгруппа <span class="arithmatex">\(L\)</span> в <span class="arithmatex">\((\mathbb{R}^n, +)\)</span> 
+    порождается некоторым линейно независимым набором векторов и, 
+    в частности, является свободной абелевой группой ранга <span class="arithmatex">\(m \le n\)</span>.</p>
+<h2 id="6"><strong>Лекция 6</strong></h2>
+<p><a href="../static/algebra_lec6.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h3 id="_7"><strong>Действия групп</strong></h3>
+<p><strong>Определение.</strong>
+    Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа, <span class="arithmatex">\(X\)</span> <span class="arithmatex">\(-\)</span> множество. 
+    Действие <span class="arithmatex">\(G\)</span> на <span class="arithmatex">\(X\)</span> <span class="arithmatex">\(-\)</span> это отображение <span class="arithmatex">\(G \times X \to X\)</span>, 
+    которое действует по правилу <span class="arithmatex">\((g, x) \mapsto gx\)</span> и удовлетворяет 2 условиям:</p>
+<ol>
+<li><span class="arithmatex">\(\forall x \in X : ex = x\)</span></li>
+<li><span class="arithmatex">\(\forall x \in X, g, h \in G : g(hx) = (gh)x\)</span></li>
+</ol>
+<p>Действие <span class="arithmatex">\(G\)</span> на <span class="arithmatex">\(X\)</span> обозначается как <span class="arithmatex">\(G : X, G \curvearrowright X\)</span>. </p>
+<p>Для любого элемента <span class="arithmatex">\(g \in G\)</span> можно определить <span class="arithmatex">\(a_g : X \to X\)</span>, которое переводит <span class="arithmatex">\(x \mapsto gx\)</span>. 
+Это будет биекция, обратное отображение для <span class="arithmatex">\(a_g : a_{g^{-1}}\)</span>. 
+Рассмотрим <span class="arithmatex">\(a : G \to S(X)\)</span>, которое переводит <span class="arithmatex">\(g \mapsto a_g\)</span>, где <span class="arithmatex">\(S(X)\)</span> <span class="arithmatex">\(-\)</span> множество биекций на <span class="arithmatex">\(X\)</span>.</p>
+<p><strong>Утверждение.</strong>
+    <span class="arithmatex">\(a\)</span> <span class="arithmatex">\(-\)</span> изоморфизм групп. </p>
+<p><strong><em>Доказательство.</em></strong>
+    Сначала хотим проверить, что <span class="arithmatex">\(a_{gh} = a_g \circ a_h\)</span>.
+    $$
+    (a_g \circ a_h) x = a_g(a_h(x)) = a_g(hx) = ghx = g(hx) = (gh)x = a_{gh}(x)
+    $$</p>
+<p><strong>Замечание.</strong>
+    Можно показать, что определения через <span class="arithmatex">\(G \times X \to X\)</span> и <span class="arithmatex">\(G \to S(X)\)</span> эквивалентны. </p>
+<p><strong>Пример.</strong>
+    Возьмем <span class="arithmatex">\(G = S_n, X = \{1, 2, \dots, n\}\)</span>. 
+    Тогда <span class="arithmatex">\(\sigma \cdot x = \sigma(x)\)</span>, где <span class="arithmatex">\(\sigma \in S_n, x, \sigma(n) \in X\)</span>.</p>
+<p><strong>Определение.</strong>
+    Пусть <span class="arithmatex">\(G \times X \to X\)</span> действие. 
+    Орбита точки <span class="arithmatex">\(x \in X\)</span> <span class="arithmatex">\(-\)</span> это множество <span class="arithmatex">\(Gx = \{gx \mid g \in G\} \subseteq X\)</span>.
+    Можно задать отношение эквивалентности, <span class="arithmatex">\(x' \sim x\)</span>, если <span class="arithmatex">\(x' \in Gx\)</span>. 
+    Следовательно все множество <span class="arithmatex">\(X\)</span> разбивается на непересекающиеся орбиты. </p>
+<p><strong>Определение.</strong>
+    Стабилизатор (или стационарная подгруппа) точки <span class="arithmatex">\(x \in X\)</span> <span class="arithmatex">\(-\)</span> все элементы <span class="arithmatex">\(g \in G\)</span>, такие что <span class="arithmatex">\(gx = x\)</span>. 
+    Обозначается как <span class="arithmatex">\(St(x) = \{g \in G \mid gx = x\} \subseteq G\)</span>. Это подгруппа в <span class="arithmatex">\(G\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Докажем, что <span class="arithmatex">\(St(x)\)</span> <span class="arithmatex">\(-\)</span> подгруппа в <span class="arithmatex">\(G\)</span>. 
+    Понятно, что если <span class="arithmatex">\(gx = x\)</span>, то и <span class="arithmatex">\(g^{-1}x = g(g^{-1}x) =x\)</span>.</p>
+<p><strong>Пример.</strong>
+    Возьмем <span class="arithmatex">\(G = S^{1} = \{z \in \mathbb{C} \mid |z| = 1\}, X = \mathbb{C}\)</span>.
+    Будем действовать как <span class="arithmatex">\((z, w) \mapsto zw\)</span> в смысле обычного умножения. 
+    Тогда орбитой будут <span class="arithmatex">\(\{w \in \mathbb{C} \mid |w| = c\}\)</span>, то есть числа с одним и тем же модулем. 
+    Стабилизатором будет </p>
+<div class="arithmatex">\[
+St(x) = \begin{cases}
+    1, \text{ если $x \ne 0$} \\ 
+    S^1, \text{ иначе }
+\end{cases} 
+\]</div>
+<p><strong>Пример.</strong>
+    Возьмем <span class="arithmatex">\(G = SL_n(\mathbb{R}), X = \mathbb{R}^n\)</span>. Тогда <span class="arithmatex">\(Gx = \{0, \mathbb{R}^n \setminus \{0\}\}\)</span>. 
+    Поймем, что <span class="arithmatex">\(\forall v \in \mathbb{R}^n \setminus \{0\}\)</span> найдется <span class="arithmatex">\(A \in SL_n(\mathbb{R})\)</span>, такая что <span class="arithmatex">\(Ae_1 = v\)</span>. 
+    Дополним до базиса <span class="arithmatex">\(v : v, v_1, \dots, v_{n-1}\)</span>. Тогда возьмем матрицу <span class="arithmatex">\(A = \begin{pmatrix}
+        v &amp; v_1 &amp; \dots &amp; v_{n-1}
+    \end{pmatrix}\)</span>, и затем <span class="arithmatex">\(A' = \begin{pmatrix}
+        v &amp; v_1 &amp; \dots &amp; \frac{v_{n-1}}{\det A'}
+    \end{pmatrix}\)</span>. Нетрудно видеть, что <span class="arithmatex">\(A\)</span> подходит. </p>
+<p><strong>Лемма.</strong>
+    Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> конечная группа и <span class="arithmatex">\(G\)</span> действует на <span class="arithmatex">\(X\)</span>. Тогда <span class="arithmatex">\(|Gx| = \frac{|G|}{|St(x)|}\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Рассмотрим <span class="arithmatex">\(G / St(x) \to Gx\)</span> и отображение <span class="arithmatex">\(g \cdot St(x) \mapsto gx\)</span>. 
+    Если <span class="arithmatex">\(g' St(x) = g St(x)\)</span>, то <span class="arithmatex">\(g' = gh\)</span> для некоторого <span class="arithmatex">\(h \in St(x)\)</span>. Тогда <span class="arithmatex">\(g'x = (gh)x = g(hx) = gx\)</span>.
+    Сюръективность следует из орбиты, потому что можно брать любые <span class="arithmatex">\(g \in G\)</span>. 
+    И наконец инъективность. Пусть <span class="arithmatex">\(g_1x = g_2x\)</span>. Подействуем <span class="arithmatex">\((g_2^{-1} \cdot )\)</span>: <span class="arithmatex">\(g_2^{-1} g_1 x = x\)</span>, что значит <span class="arithmatex">\(g_2g_1^{-1} \in St(x)\)</span>, 
+    Но тогда <span class="arithmatex">\(g_1 \in g_2St(x)\)</span>, тогда они пересекаются, а следовательно и совпадают. </p>
+<p>То есть построенное отображение <span class="arithmatex">\(-\)</span> биекция. Поэтому по теореме Лагранжа <span class="arithmatex">\(|Gx| = |G/St(X)| = \frac{|G|}{|St(X)|}\)</span>.</p>
+<p><strong>Определение.</strong>
+    Пусть <span class="arithmatex">\(G \times X \to X\)</span> действие. Назовем действие транзитивным, если <span class="arithmatex">\(\forall x, y \in X \ \exists g \in G : y = gx\)</span>. 
+    Это равносильно тому, что <span class="arithmatex">\(X\)</span> является одной из орбит. </p>
+<p><strong>Определение.</strong>
+    Пусть <span class="arithmatex">\(G \times X \to X\)</span> действие. Назовем действие свободным, если <span class="arithmatex">\(gx = x\)</span> для некоторого <span class="arithmatex">\(x \in X\)</span> влечет <span class="arithmatex">\(g=e\)</span>.
+    Иными словами, <span class="arithmatex">\(\forall x \in X : St(x) = \{e\}\)</span>.</p>
+<p><strong>Определение.</strong>
+    Пусть <span class="arithmatex">\(G \times X \to X\)</span> действие. Назовем действие эффективным, если <span class="arithmatex">\(gx = x\)</span> для любого <span class="arithmatex">\(x \in X\)</span> влечет <span class="arithmatex">\(g=e\)</span>.
+    Иными словами, <span class="arithmatex">\(\bigcap_{x \in X} St(x) = \{e\}\)</span>.</p>
+<p><strong>Факт.</strong>
+    Любое <em>свободное</em> действие <em>эффективно</em>, но не любое <em>эффективное</em> действие <em>свободно</em>. </p>
+<p><strong>Пример.</strong>
+    Действие на перестановках транзитивно и эффективно. При <span class="arithmatex">\(n \le 2\)</span> оно также свободно. </p>
+<p><strong>Определение.</strong>
+    Ядро неэффективности действия <span class="arithmatex">\(G \times X \to X\)</span> <span class="arithmatex">\(-\)</span> это <span class="arithmatex">\(K = \{g \in G \mid \forall x \in X : gx = x\} = \ker a = \bigcap_{x \in X} St(x)\)</span>.</p>
+<h3 id="_8"><strong>Как починить действия?</strong></h3>
+<p>Будем рассматривать вместо действия <span class="arithmatex">\(G \times X \to X\)</span> другое действие <span class="arithmatex">\(G / K \times X \to X\)</span>, которое 
+действует как <span class="arithmatex">\((gK, x) \mapsto gx\)</span>.</p>
+<p><strong>Лемма.</strong>
+    Упомянутое выше действие корректно определено и эффективно. </p>
+<p><strong><em>Доказательство.</em></strong>
+    Докажем корректность. Пусть <span class="arithmatex">\(g'K = gK\)</span>. Тогда <span class="arithmatex">\(g' = gk \ (k \in K)\)</span> и <span class="arithmatex">\(\forall x \in X : g'x = (gk)x = g(kx) = gx\)</span>.
+    Теперь эффективность. От противного, пусть <span class="arithmatex">\(\exists g \in G, \forall x \in X : (gK)x = x\)</span>. 
+    Тогда <span class="arithmatex">\(gx = x\)</span>, следовательно <span class="arithmatex">\(g \in K\)</span>. Соответственно <span class="arithmatex">\(gK = eK\)</span> (верно только для нейтрального элемента в <span class="arithmatex">\(G / K\)</span>).</p>
+<h3 id="g-x-g"><strong>Три действия произвольной группы <span class="arithmatex">\(G\)</span> на себе <span class="arithmatex">\((X = G)\)</span></strong></h3>
+<ol>
+<li>Левые сдвиги: <span class="arithmatex">\((g, h) \mapsto gh\)</span>. Оно транзитивно, свободно и эффективно. </li>
+<li>Правые сдвиги: <span class="arithmatex">\((g, h) \mapsto hg^{-1}\)</span>. Оно также транзитивно, свободно и эффективно. </li>
+<li>Сопряжение: <span class="arithmatex">\((g, h) \mapsto g h g^{-1}\)</span>. Заметим, что здесь <span class="arithmatex">\(K = Z(G)\)</span>, так как из условия <span class="arithmatex">\(ghg^{-1} = h\)</span> следует то, что <span class="arithmatex">\(g\)</span> и <span class="arithmatex">\(h\)</span> коммутируют. </li>
+</ol>
+<p><strong>Определение.</strong>
+    Действия <span class="arithmatex">\(G \times X \to X\)</span> и <span class="arithmatex">\(G \times Y \to Y\)</span> называются изоморфными, если существует биекция <span class="arithmatex">\(\varphi : X \to Y\)</span>, такая что 
+    <span class="arithmatex">\(\forall x \in X, g \in G : \varphi (gx) = g \varphi(x)\)</span>.</p>
+<p><strong>Предложение.</strong>
+    Любое свободное транзитивное действие <span class="arithmatex">\(G \times X \to X\)</span> изоморфно действию <span class="arithmatex">\(G \times G \to G\)</span> левыми сдвигами. </p>
+<p><strong><em>Доказательство.</em></strong>
+    Зафиксируем произвольный <span class="arithmatex">\(x \in X\)</span>.
+    Покажем, что отображение <span class="arithmatex">\(\varphi : G \to X\)</span>, которое задается формулой <span class="arithmatex">\(\varphi(h) = hx\)</span>, является искомой биекцией. 
+    Сюръективность отображения следует из транзитивности действия <span class="arithmatex">\(G \times X \to X\)</span>, а инъективность следует из свободности. </p>
+<p>Теперь проверим изоморфизм:</p>
+<div class="arithmatex">\[
+\varphi(gh) = (gh)x = g(hx) = g\varphi(h)
+\]</div>
+<p><strong>Следствие.</strong>
+    Действия левыми и правыми сдвигами изоморфны. </p>
+<h2 id="4_1"><strong>ДЗ 4</strong></h2>
+<p>Задачи, предлагавшиеся в ДЗ-4. </p>
+<p><strong>Задача 1.</strong>
+Сколько элементов порядка <span class="arithmatex">\(2, 3, 4, 5\)</span> и <span class="arithmatex">\(6\)</span> в группе 
+<span class="arithmatex">\(\mathbb{Z}_2 \times \mathbb{Z}_3 \times \underbrace{\mathbb{Z}_4 \oplus \dots \oplus \mathbb{Z}_4}_{2025}\)</span>?</p>
+<p><strong>Задача 2.</strong>
+Сколько подгрупп порядков <span class="arithmatex">\(3\)</span> и <span class="arithmatex">\(15\)</span> в нециклической абелевой группе порядка <span class="arithmatex">\(45\)</span>?</p>
+<p><strong>Задача 3.</strong>
+В факторгруппе свободной абелевой группы <span class="arithmatex">\(A\)</span> с базисом 
+    <span class="arithmatex">\(e_1, e_2, e_3\)</span> по подгруппе <span class="arithmatex">\(B\)</span>, порождённой элементами <span class="arithmatex">\(4e_1 - 2e_2 - 100e_3\)</span> 
+    и <span class="arithmatex">\(8e_1 - 10e_2 + 120e_3\)</span>, найдите порядок смежного класса <span class="arithmatex">\((32e_1 - 31e_2) + B\)</span>.</p>
+<p><strong>Задача 4.</strong>
+а) Пусть <span class="arithmatex">\(A\)</span> и <span class="arithmatex">\(B\)</span> — группы (не обязательно абелевы), <span class="arithmatex">\(C \subseteq A\)</span> — нормальная
+подгруппа. Докажите, что есть взаимно однозначное соответствие между такими
+гомоморфизмами <span class="arithmatex">\(\varphi : A \to B\)</span>, что <span class="arithmatex">\(\varphi(C) = 0\)</span>, и гомоморфизмами <span class="arithmatex">\(\overline{\varphi}: A/C \to B\)</span>.</p>
+<p>б) Найдите количество таких гомоморфизмов <span class="arithmatex">\(\varphi: \mathbb{Z} \oplus \mathbb{Z}_5 \to \mathbb{Z}_{10}\)</span>, что <span class="arithmatex">\(\varphi((4, 0)) = 0\)</span>.</p>
+<p><strong>Задача 5.</strong>
+Конечная абелева группа <span class="arithmatex">\(A\)</span> содержит подгруппу <span class="arithmatex">\(B\)</span> порядка <span class="arithmatex">\(p_1^{s_1} \dots p_k^{s_k}\)</span>. 
+Докажите, что 
+$$
+B \subseteq \Tor_{p_1} A \oplus \dots \oplus \Tor_{p_k} A,
+$$
+где <span class="arithmatex">\(\Tor_p A = \{a \in A \mid p^k a = 0 \text{ для некоторого <span class="arithmatex">\(k \in \mathbb{N}\)</span>} \}\)</span>.</p>
+<h2 id="7"><strong>Лекция 7</strong></h2>
+<p><a href="../static/algebra_lec7.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<p><strong>Теорема Кэли.</strong>
+    Всякая конечная группа <span class="arithmatex">\(G\)</span> порядка <span class="arithmatex">\(n\)</span> изоморфна подгруппе симметрической группы <span class="arithmatex">\(S_n\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    Рассмотрим действие <span class="arithmatex">\(G \times G \to G\)</span> левыми сдвигами. Это задает гомоморфизм 
+    <span class="arithmatex">\(a : G \to S(G)\)</span>. Это действие свободно, следовательно эффективно, что в свою очередь значит, что 
+    <span class="arithmatex">\(\ker a = \{e\}\)</span>. Тогда <span class="arithmatex">\(a\)</span> инъективен. По теореме о гомоморфизме <span class="arithmatex">\(G \cong G/\{e\} \cong \text{Im} a \subseteq S(G) = S_n\)</span>.</p>
+<h3 id="_9"><strong>Кольца и поля</strong></h3>
+<p><strong>Определение.</strong>
+Кольцо <span class="arithmatex">\(-\)</span> множество <span class="arithmatex">\((R, +, \times)\)</span>, которое удовлетворяет следующим аксиомам:</p>
+<ol>
+<li><span class="arithmatex">\((R, +)\)</span> <span class="arithmatex">\(-\)</span> абелева группа. </li>
+<li>дистрибутивность</li>
+</ol>
+<div class="arithmatex">\[
+a(b+c) = ab+ac\\
+(b+c)a = ba+ca
+\]</div>
+<ol>
+<li><span class="arithmatex">\((R, \times)\)</span> <span class="arithmatex">\(-\)</span> ассоциативно</li>
+<li><span class="arithmatex">\(\exists 1 \in R, \forall a \in R :  a \cdot 1 = 1 \cdot a = a\)</span></li>
+</ol>
+<p><em>Последние 2 свойства используются только на нашем курсе.</em></p>
+<p><strong>Утверждение.</strong>
+    <span class="arithmatex">\(\forall a \in R : a \cdot 0 = 0 \cdot a = 0\)</span>.</p>
+<p><strong><em>Доказательство.</em></strong>
+    $
+    a \cdot 0 = a \cdot (0 + 0) = a \cdot 0 + a \cdot 0 \Leftrightarrow a \cdot 0 = 0
+    $</p>
+<p><strong>Следствие.</strong>
+    Если <span class="arithmatex">\(|R| \ge 2\)</span>, то <span class="arithmatex">\(0 \ne 1\)</span>.</p>
+<p><strong>Определение.</strong>
+    Кольцо <span class="arithmatex">\(R\)</span> коммутативно, если умножение коммутативно, то есть <span class="arithmatex">\(\forall a, b \in R : a \cdot b = b \cdot a\)</span>.</p>
+<h3 id="_10"><strong>Примеры колец</strong></h3>
+<ol>
+<li>Числовые кольца <span class="arithmatex">\(-\)</span> <span class="arithmatex">\(\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}\)</span> </li>
+<li>Вычеты <span class="arithmatex">\(\mathbb{Z}_n\)</span></li>
+<li><span class="arithmatex">\(M_n(\mathbb{R})\)</span>, где <span class="arithmatex">\(R\)</span> <span class="arithmatex">\(-\)</span> кольцо</li>
+<li>Многочлены <span class="arithmatex">\(R[x], R[x_1, \dots, x_n]\)</span> <span class="arithmatex">\(-\)</span> от одной и от многих переменных</li>
+<li>Формальные степенные ряды <span class="arithmatex">\(R[[x]] = \left\{\sum_{i=0}^{\infty} a_i x^i, a_i \in R\right\}\)</span>; справедливо <span class="arithmatex">\(R[x] \subseteq R[[x]]\)</span></li>
+<li>Кольцо функций <span class="arithmatex">\(F(M, R)\)</span>, где <span class="arithmatex">\(M\)</span> <span class="arithmatex">\(-\)</span> множество, <span class="arithmatex">\(R\)</span> <span class="arithmatex">\(-\)</span> кольцо. <span class="arithmatex">\(F(M, R) = \left\{ f : M \to R \right\}\)</span>. 
+Введем операции </li>
+</ol>
+<div class="arithmatex">\[
+(f_1+f_2)(m) := f_1(m) + f_2(m), (f_1 \cdot f_2)(m) := f_1(m) \cdot f_2(m)
+\]</div>
+<p>Нулем и единицей будут <span class="arithmatex">\(0\)</span> и <span class="arithmatex">\(1\)</span> соответственно.</p>
+<p><strong>Определение.</strong>
+    В кольце <span class="arithmatex">\(R\)</span> элемент <span class="arithmatex">\(a \in R\)</span> называется обратимым, если <span class="arithmatex">\(\exists b \in R : ab = ba = 1\)</span>.</p>
+<p><strong>Замечание.</strong>
+    Все обратимые элементы кольца образуют группу по умножению.</p>
+<p><strong>Определение.</strong>
+    Элемент <span class="arithmatex">\(a \in R \ (a \ne 0)\)</span> называется левым (соответственно правым) делителем нуля, если 
+    <span class="arithmatex">\(\exists b \in R \ (b \ne 0) : ab = 0\)</span> (соответственно <span class="arithmatex">\(ba = 0\)</span>).</p>
+<p><strong>Замечание.</strong>
+    Все делители нуля необратимы. 
+    Если <span class="arithmatex">\(ab = 0\)</span>, и <span class="arithmatex">\(a\)</span> обратим, то <span class="arithmatex">\(a^{-1}ab = (a^{-1}a)b = b = 0\)</span>, но <span class="arithmatex">\(b \ne 0\)</span>.</p>
+<p><strong>Определение.</strong>
+    Элемент <span class="arithmatex">\(a \in R \ (a \ne 0)\)</span> называется нильпотентным, если <span class="arithmatex">\(\exists m \in \mathbb{N} : a^m = 0\)</span>. </p>
+<p><strong>Замечание.</strong>
+    Нильпотент является делителем нуля, так как <span class="arithmatex">\(a \cdot a^{m-1} = 0\)</span>, но <span class="arithmatex">\(a, a^{m-1} \ne 0\)</span>.</p>
+<p><strong>Определение.</strong>
+    Элемент <span class="arithmatex">\(a \in R\)</span> называется идемпотентом, если <span class="arithmatex">\(a^2 = a\)</span>. </p>
+<p><strong>Определение.</strong>
+    Поле <span class="arithmatex">\(K\)</span> <span class="arithmatex">\(-\)</span> коммутативное кольцо и любой ненулевой элемент обратим.</p>
+<p><strong>Пример.</strong>
+    <span class="arithmatex">\(\mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{Z}_p\)</span> (где <span class="arithmatex">\(p\)</span> простое) <span class="arithmatex">\(-\)</span> поля. </p>
+<p><strong>Определение.</strong>
+    Подкольцо <span class="arithmatex">\((R', +, \times)\)</span>, где <span class="arithmatex">\(R' \subseteq R\)</span>, определяется аналогично кольцу. 
+    Так же определяется подполе.</p>
+<p><strong>Определение.</strong>
+    Алгебра <span class="arithmatex">\(-\)</span> кольцо + векторное пространство над полем <span class="arithmatex">\(K\)</span>. 
+    Оно задается как
+    <span class="arithmatex">\((R, +, \times, \lambda)\)</span>, то есть можно умножать на скаляр <span class="arithmatex">\(\lambda \in K\)</span>.</p>
+<h3 id="_11"><strong>Примеры алгебр</strong></h3>
+<ol>
+<li>Поле <span class="arithmatex">\(K\)</span> <span class="arithmatex">\(-\)</span> алгебра над <span class="arithmatex">\(K\)</span>.</li>
+<li><span class="arithmatex">\(M_n(K)\)</span> <span class="arithmatex">\(-\)</span> алгебра над <span class="arithmatex">\(K\)</span>, <span class="arithmatex">\(\dim = n^2\)</span></li>
+<li><span class="arithmatex">\(K[x_1, \dots, x_n]\)</span> <span class="arithmatex">\(-\)</span> алгебра над <span class="arithmatex">\(K\)</span>, <span class="arithmatex">\(\dim = \infty\)</span> (но счетная)</li>
+<li><span class="arithmatex">\(F(M, K)\)</span> <span class="arithmatex">\(-\)</span> алгебра над <span class="arithmatex">\(K\)</span>, <span class="arithmatex">\(\dim = |M|\)</span> (можно задать функции, которые в одной точке <span class="arithmatex">\(1\)</span>, 
+    а во всех остальных <span class="arithmatex">\(0\)</span>, и через них выразить все другие функции)</li>
+</ol>
+<p><strong>Определение.</strong>
+    Подалгебра <span class="arithmatex">\(-\)</span> подкольцо + подпространство.</p>
+<p><strong>Определение.</strong>
+    Идеал <span class="arithmatex">\(I\)</span> кольца <span class="arithmatex">\(R\)</span> <span class="arithmatex">\(-\)</span> подмножество, которое удовлетворяет 2 свойствам:</p>
+<ol>
+<li>подгруппа по сложению</li>
+<li><span class="arithmatex">\(\forall a \in I, r \in R : ar \in I, ra \in I\)</span> (это для двустороннего идеала; аналогично определяются односторонние идеалы)</li>
+</ol>
+<p><strong>Замечание.</strong>
+    Идеалы <span class="arithmatex">\(-\)</span> это аналог нормальных подгрупп (по ним можно факторизовать).</p>
+<p><strong>Упражнение.</strong>
+    <span class="arithmatex">\(I = R \Leftrightarrow 1 \in I \Leftrightarrow\)</span> в идеале есть обратимый элемент.</p>
+<h3 id="_12"><strong>Как строить идеалы?</strong></h3>
+<p>Здесь и далее полагаем, что <span class="arithmatex">\(R\)</span> коммутативно. 
+Определим главный идеал элемента <span class="arithmatex">\(r \in R\)</span>, где <span class="arithmatex">\((r) = \{ar \mid a \in R\}\)</span>.</p>
+<p><strong>Пример.</strong>
+    Пусть <span class="arithmatex">\(R = \mathbb{Z}\)</span>. Тогда <span class="arithmatex">\((k) = k\mathbb{Z}\)</span>, и все идеалы главные (так как любая подгруппа <span class="arithmatex">\(\mathbb{Z}\)</span> имеет вид <span class="arithmatex">\(k\mathbb{Z}\)</span>). </p>
+<h3 id="_13"><strong>Бывают ли неглавные идеалы?</strong></h3>
+<p>Рассмотрим <span class="arithmatex">\(\mathbb{R}[x, y]\)</span> кольцо многочленов, у которых свободный член нулевой. 
+Обобщим понятие главного идеала. Пусть <span class="arithmatex">\(S \subseteq R\)</span> <span class="arithmatex">\(-\)</span> идеал: </p>
+<div class="arithmatex">\[
+(S) = \left\{ 
+    a_1s_1 + \dots + a_ns_n \mid k \in \mathbb{N}, s_i \in S, a_i \in \mathbb{R}
+\right\}
+\]</div>
+<h3 id="_14"><strong>Факторкольцо</strong></h3>
+<p>Факторкольцом называется <span class="arithmatex">\(R/I = \{a + I, a \in R\}\)</span>. Определим сложение 
+<span class="arithmatex">\((a+I) + (b+I) = (a+b) + I\)</span> и умножение <span class="arithmatex">\((a+I) (b+I) = ab + I\)</span>. Определение корректно, потому что </p>
+<div class="arithmatex">\[
+\left( (a+i) + I \right)
+\left( (b+j) + I \right) = \left( ab+ib+aj+ij\right) + I, ib+aj+ij \in I
+\]</div>
+<p>Нетрудно видеть, что <span class="arithmatex">\(\mathbb{Z} = \mathbb{Z} / n\mathbb{Z} = \mathbb{Z} / (n)\)</span>.
+Также определим гомоморфизм <span class="arithmatex">\(\varphi : R_1 \to R_2, \ker \varphi = \{a \in R \mid \varphi(a) = 0\}\)</span> <span class="arithmatex">\(-\)</span> идеал в <span class="arithmatex">\(R_1\)</span>.
+Аналогично определим образ <span class="arithmatex">\(\text{Im} \varphi = \{\varphi(a) \mid a \in R_1\}\)</span>.</p>
+<p><strong>Теорема (о гомоморфизме для колец).</strong>
+<span class="arithmatex">\(\text{Im} \varphi \cong R_1 / \ker \varphi\)</span>.</p>
+<h2 id="8"><strong>Лекция 8</strong></h2>
+<p><a href="../static/algebra_lec8.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="-5"><strong>ДЗ-5</strong></h2>
+<ol>
+<li>
+<p>Пусть <span class="arithmatex">\(G\)</span> <span class="arithmatex">\(-\)</span> группа всех верхнетреугольных матриц в <span class="arithmatex">\(GL_2(\mathbb{R}\)</span>) и <span class="arithmatex">\(X = \text{Mat}_{2 \times 1}(\mathbb{R})\)</span> <span class="arithmatex">\(-\)</span> 
+множество всех столбцов высоты <span class="arithmatex">\(2\)</span> с коэффициентами из <span class="arithmatex">\(\mathbb{R}\)</span>. 
+Опишите все орбиты группы <span class="arithmatex">\(G\)</span> на множестве <span class="arithmatex">\(X\)</span> умножениями слева, т.е. <span class="arithmatex">\((g, x) \mapsto gx\)</span> для всех <span class="arithmatex">\(g \in G, x \in X\)</span>.
+Также опишите стабилизаторы столбцов <span class="arithmatex">\(\bigl( \begin{smallmatrix}
+    1 \\ 0
+\end{smallmatrix} \bigr), \bigl( \begin{smallmatrix}
+    1 \\ 1
+\end{smallmatrix} \bigr)\)</span>.</p>
+</li>
+<li>
+<p>Пусть группа <span class="arithmatex">\(G\)</span> действует на множестве <span class="arithmatex">\(X, x,y\)</span> --- элементы одной орбиты
+<span class="arithmatex">\(G\)</span> в <span class="arithmatex">\(X\)</span>. Докажите, что все такие <span class="arithmatex">\(g \in G\)</span>, что <span class="arithmatex">\(gx= y\)</span>, составляют левый смежный класс
+<span class="arithmatex">\(G\)</span> по стабилизатору <span class="arithmatex">\(\text{St}(x)\)</span> и правый смежный класс по стабилизатору <span class="arithmatex">\(\text{St}(y)\)</span>.</p>
+</li>
+<li>
+<p>Используя доказательство теоремы Кэли, реализуйте группу <span class="arithmatex">\(\mathbb{Z}_2 \times \mathbb{Z}_3\)</span> как
+    подгруппу в <span class="arithmatex">\(S_6\)</span>.</p>
+</li>
+<li>
+<p>Централизатором <span class="arithmatex">\(C(x)\)</span> элемента <span class="arithmatex">\(x\)</span> группы <span class="arithmatex">\(G\)</span> называется подмножество
+элементов группы, которые коммутируют с данным: <span class="arithmatex">\(C(x) = \{g \in G \mid gx = xg\}\)</span>.
+Найдите централизатор подстановки <span class="arithmatex">\((1 \ 2 \ 3 \dots n-1) \in S_n\)</span> при <span class="arithmatex">\(n&gt;2\)</span>.</p>
+</li>
+<li>
+<p>Конечно или бесконечно с точностью до изоморфизма количество конечных групп, 
+    в которых ровно <span class="arithmatex">\(2025\)</span> классов сопряженности?</p>
+</li>
+</ol>
+<h2 id="9"><strong>Лекция 9</strong></h2>
+<p><a href="../static/algebra_lec9.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="10"><strong>Лекция 10</strong></h2>
+<p><a href="../static/algebra_lec10.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="-6"><strong>ДЗ-6</strong></h2>
+<ol>
+<li>
+<p>Найдите все обратимые элементы, 
+все делители нуля и все нильпотентные элементы в кольце матриц <span class="arithmatex">\(M_2(\mathbb{Q})\)</span>.</p>
+</li>
+<li>
+<p>Пусть <span class="arithmatex">\(K\)</span> <span class="arithmatex">\(-\)</span> поле и 
+<span class="arithmatex">\(f \in K[x]\)</span> <span class="arithmatex">\(-\)</span> многочлен степени <span class="arithmatex">\(n\)</span>. 
+Докажите, что
+размерность факторкольца <span class="arithmatex">\(K[x]/(f)\)</span>
+как векторного пространства над <span class="arithmatex">\(K\)</span> 
+равна <span class="arithmatex">\(n\)</span>.</p>
+</li>
+<li>
+<p>Приведите пример не главного 
+идеала в кольце <span class="arithmatex">\(\mathbb{Z}[x]\)</span>.</p>
+</li>
+<li>
+<p>Докажите, что образ поля <span class="arithmatex">\(F\)</span> при 
+    гомоморфизме колец либо нулевой, либо
+    изоморфен <span class="arithmatex">\(F\)</span>.</p>
+</li>
+<li>
+<p>Какие из следующих факторколец изоморфны:
+$$
+\mathbb{Q}[x]/(x^2 - 1), \quad
+\mathbb{Q}[x]/(x^2 + 1), \quad
+\mathbb{Q}[x]/(x^2 - 2x + 1), \quad
+\mathbb{Q}[x]/(x^2 - 2), \quad
+\mathbb{Q}[x]/(x^2 - 4)
+$$</p>
+</li>
+</ol>
+<h2 id="11"><strong>Лекция 11</strong></h2>
+<p><a href="../static/algebra_lec11.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="12"><strong>Лекция 12</strong></h2>
+<p><a href="../static/algebra_lec12.pdf">Ссылка</a> на лекцию в <span class="arithmatex">\(\LaTeX\)</span>-формате.</p>
+<h2 id="-7"><strong>ДЗ-7</strong></h2>
+<ol>
+<li>
+<p>Докажите, что многочлен
+<span class="arithmatex">\(<span class="arithmatex">\(f(x_1,x_2,x_3,x_4) = (x_1 + x_2 - x_3 - x_4)
+(x_1 - x_2 + x_3 - x_4)(x_1 - x_2 - x_3 + x_4)\)</span>\)</span>
+является симметрическим, и выразите его через 
+элементарные симметрические многочлены.</p>
+</li>
+<li>
+<p>Найдите сумму чисел, обратных к комплексным корням многочлена
+$$
+7x^4 - 5x^2 - 8x+ 9
+$$</p>
+</li>
+<li>
+<p>Найдите многочлен 4-й степени, корнями которого являются кубы всех
+комплексных корней многочлена <span class="arithmatex">\(f(x) = x^4 + x - 1\)</span>.</p>
+</li>
+<li>
+<p>Пусть <span class="arithmatex">\(K\)</span> — поле, <span class="arithmatex">\(a \in K\)</span> и <span class="arithmatex">\(f(x) \in K[x]\)</span>. Докажите, что
+$$
+D[(x-a)f(x)] = D[f(x)] \cdot f(a)^2
+$$</p>
+</li>
+<li>
+<p>Пусть на множестве всех одночленов от 
+переменных <span class="arithmatex">\(x_1,x_2,...,x_n\)</span> 
+с коэффициентом <span class="arithmatex">\(1\)</span> введен (нестрогий) линейный порядок 
+<span class="arithmatex">\(\preceq\)</span>, удовлетворяющий следующим свойствам: <span class="arithmatex">\(1 \preceq m\)</span> для любого <span class="arithmatex">\(m \in M\)</span>; 
+и если <span class="arithmatex">\(m_1 \preceq m_2\)</span>, то 
+<span class="arithmatex">\(m_1 \cdot m \preceq m_2 \cdot m\)</span> для всех <span class="arithmatex">\(m_1,m_2,m \in M\)</span>.
+Докажите, что 
+частично упорядоченное 
+множество <span class="arithmatex">\((M,\preceq)\)</span> является фундированным.</p>
+</li>
+</ol>
+<h2 id="13"><strong>Лекция 13</strong></h2>
+<p>Отказано. </p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="akhasanovv/hse-ami-materials"
+        data-repo-id="R_kgDOOoN71A"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOOoN71M4CrM3w"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
