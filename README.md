@@ -8,7 +8,7 @@
 
 В ближайших планах: 
 
-1. Сделать конспект более читаемым. Например, за счет [таких штук](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:example).
+1. Сделать конспект более читабельным. Например, за счет [таких штук](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:example).
 2. Добавить больше интерактивного материала.
 
 При создании использовался замечательный [MkDocs](https://github.com/mkdocs/mkdocs).
